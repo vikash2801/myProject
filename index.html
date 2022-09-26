@@ -2,6 +2,7 @@
     <head>
         <title>Udemy</title>
         <link href="css/home.css" rel="stylesheet"/>
+        <script src="javascript/index.js"></script>
         <!-- link for Font Awesome cdn-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -24,774 +25,788 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
-            <div class="flexDiv">
-                <div id="brand">
-                    <a href="#" target="_blank">
-                        <img src="images/logo-udemy.svg" alt="Udemy logo"/>
-                    </a>                    
-                </div>
-                <div id="catgries"><a href="#">Categories</a></div>
-                <div id="searchbox">
-                    <div id="searchlogo">
-                        <div>
-                            <img src="images/logo-search.jpg" alt="search-icon"/>
-                        </div>
+        <div id="Udemy_body">
+            <header>
+                <div class="flexDiv">
+                    <div id="brand">
+                        <a href="#" target="_blank">
+                            <img src="images/logo-udemy.svg" alt="Udemy logo"/>
+                        </a>                    
                     </div>
-                    <div id="search"><input type="text" name="Search" placeholder="Search for anything" /></div>
-                </div>
-                <div id="UBness"><a href="#">Udemy Business</a></div>
-                <div id="tudemy"><a href="#">Teach on Udemy</a></div>
-                <div id="cart">
-                    <a href="#">
-                        <div>
-                            <img src="images/cart.jpg" alt="cart-icon"/>
+                    <div id="catgries"><a href="#">Categories</a></div>
+                    <div id="searchbox">
+                        <div id="searchlogo">
+                            <div>
+                                <img src="images/logo-search.jpg" alt="search-icon"/>
+                            </div>
                         </div>
-                    </a>
-                </div>
-            
-                <div id="account">
-                    <div class="std-width login"><a href="#"><span>Log in</span></a></div>
-                    <div class="dark std-width"><a href="#">Sign up</a></div>
-                    <div id="browser">
+                        <div id="search"><input type="text" name="Search" placeholder="Search for anything" /></div>
+                    </div>
+                    <div id="UBness"><a href="#">Udemy Business</a></div>
+                    <div id="tudemy"><a href="#">Teach on Udemy</a></div>
+                    <div id="cart">
                         <a href="#">
                             <div>
-                                <img src="images/browselogo.png" alt="browse-icon"/>
+                                <img src="images/cart.jpg" alt="cart-icon"/>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="day-night">
+                        <button onClick="changeTheme()">                            
+                                 <img src="images/brightness.png" alt="light-icon"  class="theme-img" />
+                        </button>
+                    </div>            
+                
+                    <div id="account">
+                        <div class="std-width login"><a href="#"><span>Log in</span></a></div>
+                        <div class="dark std-width"><a href="#">Sign up</a></div>
+                        <div id="browser">
+                            <a href="#">
+                                <div>
+                                    <img src="images/browselogo.png" alt="browse-icon"/>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="container">
+                <div class="box promo">
+                    <div id="carouselExampleControls" class="carousel  slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active prm">
+                                <img src="images/frontimg.png" class="d-block w-100" alt="one"/>
+                                <div class="promoText">
+                                    <h1>Our biggest sale of the season</h1>
+                                    <h4>Stock up on courses from ₹389. From coding to leadership to photography, you can learn almost anything. Ends Aug. 31.</h4>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/slide1.jpg" class="d-block w-100" alt="two"/>
+                                <div class="promoText">
+                                    <h1>Learning that gets you</h1>
+                                    <h4>Skills for your present (and your future). Get started with us.</h4>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class=".dot"></span>
+                                <span class="carousel-control-next-icon arrow-clr" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                            </div>   
+                    </div>
+                </div>
+            
+
+
+                <div id="courses">
+                    <div class="course-heading">
+                        <h1>A broad selection of courses</h1>
+                        <span>Choose from 204,000 online video courses with new additions published every month</span>
+                    </div>
+                    <div class="course-body">
+                        <div class="course-category">
+                            <ul>
+                                <li><a href="#" target="_blank"><h4>Python</h4></a></li>
+                                <li><a href="#" target="_blank"><h4>Excel</h4></a></li>
+                                <li><a href="#" target="_blank"><h4>Web Development</h4></a></li>
+                                <li><a href="#" target="_blank"><h4>JavaScript</h4></a></li>
+                                <li><a href="#" target="_blank"><h4>Data Science</h4></a></li>
+                                <li><a href="#" target="_blank"><h4>AWS Certification</h4></a></li>
+                                <li><a href="#" target="_blank"><h4>Drawing</h4></a></li>
+                            </ul>
+                            <div class="course-content">
+                                <div class="content-heading">
+                                    <h1>Expand your career opportunities with Python</h1>
+                                    <p>Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful language. Its simple syntax and readability makes Python perfect for Flask, Django, data science, and machine learning. You’ll learn how to build everything from games to sites to apps. Choose from a range of courses that will appeal to both beginners and advanced developers alike.</p>
+                                    <button class="explore">Explore Python</button>
+                                </div>
+                                <div class="my-slide">
+                                    <div class="owl-carousel owl-theme">
+                                        <div class="content-item">
+                                            <div class="div-img"><img src="images/course_img1.jpg" alt="python course"/></div>
+                                            <div class="div-caption">
+                                                <h1>Learn Python: The Complete Python Programming Course</h1>
+                                                <span class="img-tag">Avinash Jain, The Codex</span>
+                                                <div class="course-rating">
+                                                    <div><span class="rating-no">4.4</span></div>
+                                                    <div>
+                                                        <span  class="star">&starf;</span>
+                                                        <span  class="star">&starf;</span>
+                                                        <span  class="star">&starf;</span>  
+                                                        <span  class="star">&starf;</span>
+                                                        <span><i class="fa fa-star-half-full half-star"></i></span>
+                                                    </div>
+                                                    <div>
+                                                        <span class="course-reviews">(3,123)</span>
+                                                    </div>
+                                                </div>
+                                                <span class="course-chrg">&#8377;3,399</span>
+                                            </div>
+                                        </div>
+                                        <div class="content-item">
+                                            <div class="div-img"><img src="images/course_img2.jpg" alt="python course"/></div>
+                                            <div class="div-caption">
+                                                <h1>Learn Python: The Complete Python Programming Course</h1>
+                                                <span class="img-tag">Avinash Jain, The Codex</span>
+                                                <div class="course-rating">
+                                                    <div><span class="rating-no">4.4</span></div>
+                                                    <div>
+                                                        <span  class="star">&starf;</span>
+                                                        <span  class="star">&starf;</span>
+                                                        <span  class="star">&starf;</span>  
+                                                        <span  class="star">&starf;</span>
+                                                        <span><i class="fa fa-star-half-full half-star"></i></span>
+                                                    </div>
+                                                    <div>
+                                                        <span class="course-reviews">(3,123)</span>
+                                                    </div>
+                                                </div>
+                                                <span class="course-chrg">&#8377;3,399</span>
+                                            </div>
+                                        </div>
+                                        <div class="content-item">
+                                            <div class="div-img"><img src="images/course_img3.jpg" alt="python course"/></div>
+                                            <div class="div-caption">
+                                                <h1>Learn Python: The Complete Python Programming Course</h1>
+                                                <span class="img-tag">Avinash Jain, The Codex</span>
+                                                <div class="course-rating">
+                                                    <div><span class="rating-no">4.4</span></div>
+                                                    <div>
+                                                        <span  class="star">&starf;</span>
+                                                        <span  class="star">&starf;</span>
+                                                        <span  class="star">&starf;</span>  
+                                                        <span  class="star">&starf;</span>
+                                                        <span><i class="fa fa-star-half-full half-star"></i></span>
+                                                    </div>
+                                                    <div>
+                                                        <span class="course-reviews">(3,123)</span>
+                                                    </div>
+                                                </div>
+                                                <span class="course-chrg">&#8377;3,399</span>
+                                            </div>
+                                        </div>
+                                        <div class="content-item">
+                                            <div class="div-img"><img src="images/course_img4.jpg" alt="python course"/></div>
+                                            <div class="div-caption">
+                                                <h1>Learn Python: The Complete Python Programming Course</h1>
+                                                <span class="img-tag">Avinash Jain, The Codex</span>
+                                                <div class="course-rating">
+                                                    <div><span class="rating-no">4.4</span></div>
+                                                    <div>
+                                                        <span  class="star">&starf;</span>
+                                                        <span  class="star">&starf;</span>
+                                                        <span  class="star">&starf;</span>  
+                                                        <span  class="star">&starf;</span>
+                                                        <span><i class="fa fa-star-half-full half-star"></i></span>
+                                                    </div>
+                                                    <div>
+                                                        <span class="course-reviews">(3,123)</span>
+                                                    </div>
+                                                </div>
+                                                <span class="course-chrg">&#8377;3,399</span>
+                                            </div>
+                                        </div>
+                                        <div class="content-item">
+                                            <div class="div-img"><img src="images/course_img5.jpg" alt="python course"/></div>
+                                            <div class="div-caption">
+                                                <h1>Learn Python: The Complete Python Programming Course</h1>
+                                                <span class="img-tag">Avinash Jain, The Codex</span>
+                                                <div class="course-rating">
+                                                    <div><span class="rating-no">4.4</span></div>
+                                                    <div>
+                                                        <span  class="star">&starf;</span>
+                                                        <span  class="star">&starf;</span>
+                                                        <span  class="star">&starf;</span>  
+                                                        <span  class="star">&starf;</span>
+                                                        <span><i class="fa fa-star-half-full half-star"></i></span>
+                                                    </div>
+                                                    <div>
+                                                        <span class="course-reviews">(3,123)</span>
+                                                    </div>
+                                                </div>
+                                                <span class="course-chrg">&#8377;3,399</span>
+                                            </div>
+                                        </div>
+                                        <div class="content-item">
+                                            <div class="div-img"><img src="images/course_img6.jpg" alt="python course"/></div>
+                                            <div class="div-caption">
+                                                <h1>Learn Python: The Complete Python Programming Course</h1>
+                                                <span class="img-tag">Avinash Jain, The Codex</span>
+                                                <div class="course-rating">
+                                                    <div><span class="rating-no">4.4</span></div>
+                                                    <div>
+                                                        <span  class="star">&starf;</span>
+                                                        <span  class="star">&starf;</span>
+                                                        <span  class="star">&starf;</span>  
+                                                        <span  class="star">&starf;</span>
+                                                        <span><i class="fa fa-star-half-full half-star"></i></span>
+                                                    </div>
+                                                    <div>
+                                                        <span class="course-reviews">(3,123)</span>
+                                                    </div>
+                                                </div>
+                                                <span class="course-chrg">&#8377;3,399</span>
+                                            </div>
+                                        </div>
+                                        <div class="content-item">
+                                            <div class="div-img"><img src="images/course_img7.jpg" alt="python course"/></div>
+                                            <div class="div-caption">
+                                                <h1>Learn Python: The Complete Python Programming Course</h1>
+                                                <span class="img-tag">Avinash Jain, The Codex</span>
+                                                <div class="course-rating">
+                                                    <div><span class="rating-no">4.4</span></div>
+                                                    <div>
+                                                        <span  class="star">&starf;</span>
+                                                        <span  class="star">&starf;</span>
+                                                        <span  class="star">&starf;</span>  
+                                                        <span  class="star">&starf;</span>
+                                                        <span><i class="fa fa-star-half-full half-star"></i></span>
+                                                    </div>
+                                                    <div>
+                                                        <span class="course-reviews">(3,123)</span>
+                                                    </div>
+                                                </div>
+                                                <span class="course-chrg">&#8377;3,399</span>
+                                            </div>
+                                        </div>
+                                        <div class="content-item">
+                                            <div class="div-img"><img src="images/course_img8.jpg" alt="python course"/></div>
+                                            <div class="div-caption">
+                                                <h1>Learn Python: The Complete Python Programming Course</h1>
+                                                <span class="img-tag">Avinash Jain, The Codex</span>
+                                                <div class="course-rating">
+                                                    <div><span class="rating-no">4.7</span></div>
+                                                    <div>
+                                                        <span  class="star">&starf;</span>
+                                                        <span  class="star">&starf;</span>
+                                                        <span  class="star">&starf;</span>  
+                                                        <span  class="star">&starf;</span>
+                                                        <span><i class="fa fa-star-half-full half-star"></i></span>
+                                                    </div>
+                                                    <div>
+                                                        <span class="course-reviews">(139,562)</span>
+                                                    </div>
+                                                </div>
+                                                <span class="course-chrg">&#8377;389 <delete>&#8377;3,499</delete></span>
+                                            </div>
+                                        </div>
+                                        <div class="content-item">
+                                            <div class="div-img"><img src="images/course_img9.jpg" alt="javascript course"/></div>
+                                            <div class="div-caption">
+                                                <h1>The Complete JavaScript Course 2022: From Zero to Expert!</h1>
+                                                <span class="img-tag">Jonas Schmedtmann</span>
+                                                <div class="course-rating">
+                                                    <div><span class="rating-no">4.8</span></div>
+                                                    <div>
+                                                        <span  class="star">&starf;</span>
+                                                        <span  class="star">&starf;</span>
+                                                        <span  class="star">&starf;</span>  
+                                                        <span  class="star">&starf;</span>
+                                                        <span><i class="fa fa-star-full star"></i></span>
+                                                    </div>
+                                                    <div>
+                                                        <span class="course-reviews">(147,313)</span>
+                                                    </div>
+                                                </div>
+                                                <span class="course-chrg">&#8377;389<delete>&#8377;3,499</delete></span>
+                                            </div>
+                                        </div>
+                                        <div class="content-item">
+                                            <div class="div-img"><img src="images/course_img10.jpg" alt="python course"/></div>
+                                            <div class="div-caption">
+                                                <h1>Learning Python for Data Analysis and Visualization</h1>
+                                                <span class="img-tag">Jose Portilla</span>
+                                                <div class="course-rating">
+                                                    <div><span class="rating-no">4.4</span></div>
+                                                    <div>
+                                                        <span  class="star">&starf;</span>
+                                                        <span  class="star">&starf;</span>
+                                                        <span  class="star">&starf;</span>  
+                                                        <span  class="star">&starf;</span>
+                                                        <span><i class="fa fa-star-half-full half-star"></i></span>
+                                                    </div>
+                                                    <div>
+                                                        <span class="course-reviews">(5,123)</span>
+                                                    </div>
+                                                </div>
+                                                <span class="course-chrg">&#8377;3,499</span>
+                                            </div>
+                                        </div>
+                                        <div class="content-item">
+                                            <div class="div-img"><img src="images/course_img11.jpg" alt="python course"/></div>
+                                            <div class="div-caption">
+                                                <h1>Learning Python for Data Analysis and Visualization</h1>
+                                                <span class="img-tag">Jose Portilla</span>
+                                                <div class="course-rating">
+                                                    <div><span class="rating-no">4.4</span></div>
+                                                    <div>
+                                                        <span  class="star">&starf;</span>
+                                                        <span  class="star">&starf;</span>
+                                                        <span  class="star">&starf;</span>  
+                                                        <span  class="star">&starf;</span>
+                                                        <span><i class="fa fa-star-half-full half-star"></i></span>
+                                                    </div>
+                                                    <div>
+                                                        <span class="course-reviews">(5,123)</span>
+                                                    </div>
+                                                </div>
+                                                <span class="course-chrg">&#8377;3,499</span>
+                                            </div>
+                                        </div>
+                                        <div class="content-item">
+                                            <div class="div-img"><img src="images/course_img12.jpg" alt="python course"/></div>
+                                            <div class="div-caption">
+                                                <h1>Learning Python for Data Analysis and Visualization</h1>
+                                                <span class="img-tag">Jose Portilla</span>
+                                                <div class="course-rating">
+                                                    <div><span class="rating-no">4.4</span></div>
+                                                    <div>
+                                                        <span  class="star">&starf;</span>
+                                                        <span  class="star">&starf;</span>
+                                                        <span  class="star">&starf;</span>  
+                                                        <span  class="star">&starf;</span>
+                                                        <span><i class="fa fa-star-half-full half-star"></i></span>
+                                                    </div>
+                                                    <div>
+                                                        <span class="course-reviews">(5,123)</span>
+                                                    </div>
+                                                </div>
+                                                <span class="course-chrg">&#8377;3,499</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div id="studentsView">
+                    <h1 class="category-heading">Students are viewing</h1>
+                    <div class="my-slide">
+                        <div class="owl-carousel owl-theme">
+                            <div class="content-item">
+                                <div class="div-img"><img src="images/students_view1.jpg" alt="WebDevelopment course"/></div>
+                                <div class="div-caption">
+                                    <h1>The Complete 2022 Web Development Bootcamp</h1>
+                                    <span class="img-tag">Dr. Angela Yu</span>
+                                    <div class="course-rating">
+                                        <div><span class="rating-no">4.7</span></div>
+                                        <div>
+                                            <span  class="star">&starf;</span>
+                                            <span  class="star">&starf;</span>
+                                            <span  class="star">&starf;</span>  
+                                            <span  class="star">&starf;</span>
+                                            <span><i class="fa fa-star-half-full half-star"></i></span>
+                                        </div>
+                                        <div>
+                                            <span class="course-reviews">(213,276)</span>
+                                        </div>
+                                    </div>
+                                    <span class="course-chrg">&#8377;389 <delete>&#8377;3,499</delete></span>
+                                </div>
+                            </div>
+                            <div class="content-item">
+                                <div class="div-img"><img src="images/students_view2.jpg" alt="100 DoC course"/></div>
+                                <div class="div-caption">
+                                    <h1>100 Days of Code:The Complete Python Pro Bootcamp for 2022</h1>
+                                    <span class="img-tag">Dr. Angela Yu</span>
+                                    <div class="course-rating">
+                                        <div><span class="rating-no">4.7</span></div>
+                                        <div>
+                                            <span  class="star">&starf;</span>
+                                            <span  class="star">&starf;</span>
+                                            <span  class="star">&starf;</span>  
+                                            <span  class="star">&starf;</span>
+                                            <span><i class="fa fa-star-half-full half-star"></i></span>
+                                        </div>
+                                        <div>
+                                            <span class="course-reviews">(128,878)</span>
+                                        </div>
+                                    </div>
+                                    <span class="course-chrg">&#8377;389 <delete>&#8377;3,499</delete></span>
+                                </div>
+                            </div>
+                            <div class="content-item">
+                                <div class="div-img"><img src="images/students_view3.jpg" alt="python course"/></div>
+                                <div class="div-caption">
+                                    <h1>Ultimate AWS Certified Solutions Architect Associate...</h1>
+                                    <span class="img-tag">Stephane Maarek | AWS Certified Cloud Pra..</span>
+                                    <div class="course-rating">
+                                        <div><span class="rating-no">4.4</span></div>
+                                        <div>
+                                            <span  class="star">&starf;</span>
+                                            <span  class="star">&starf;</span>
+                                            <span  class="star">&starf;</span>  
+                                            <span  class="star">&starf;</span>
+                                            <span><i class="fa fa-star-half-full half-star"></i></span>
+                                        </div>
+                                        <div>
+                                            <span class="course-reviews">(3,123)</span>
+                                        </div>
+                                    </div>
+                                    <span class="course-chrg">&#8377;3,399</span>
+                                </div>
+                            </div>
+                            <div class="content-item">
+                                <div class="div-img"><img src="images/students_view4.jpg" alt="python course"/></div>
+                                <div class="div-caption">
+                                    <h1>The Complete JavaScript Course 2022: From Zero to Expert!</h1>
+                                    <span class="img-tag">Jonas Schmedtmann</span>
+                                    <div class="course-rating">
+                                        <div><span class="rating-no">4.8</span></div>
+                                        <div>
+                                            <span  class="star">&starf;</span>
+                                            <span  class="star">&starf;</span>
+                                            <span  class="star">&starf;</span>  
+                                            <span  class="star">&starf;</span>
+                                            <span><i class="fa fa-star-full star"></i></span>
+                                        </div>
+                                        <div>
+                                            <span class="course-reviews">(147,313)</span>
+                                        </div>
+                                    </div>
+                                    <span class="course-chrg">&#8377;389<delete>&#8377;3,499</delete></span>
+                                </div>
+                            </div>
+                            <div class="content-item">
+                                <div class="div-img"><img src="images/students_view5.jpg" alt="react course"/></div>
+                                <div class="div-caption">
+                                    <h1>React - The Complete Guide(incl Hooks, React Router, Redux)</h1>
+                                    <span class="img-tag">Academind by Maximillian</span>
+                                    <div class="course-rating">
+                                        <div><span class="rating-no">4.6</span></div>
+                                        <div>
+                                            <span  class="star">&starf;</span>
+                                            <span  class="star">&starf;</span>
+                                            <span  class="star">&starf;</span>  
+                                            <span  class="star">&starf;</span>
+                                            <span><i class="fa fa-star-half-full half-star"></i></span>
+                                        </div>
+                                        <div>
+                                            <span class="course-reviews">(157,703)</span>
+                                        </div>
+                                    </div>
+                                    <span class="course-chrg">&#8377;389</span>
+                                </div>
+                            </div>
+                            <div class="content-item">
+                                <div class="div-img"><img src="images/students_view6.jpg" alt="python course"/></div>
+                                <div class="div-caption">
+                                    <h1>Learn Python: The Complete Python Programming Course</h1>
+                                    <span class="img-tag">Avinash Jain, The Codex</span>
+                                    <div class="course-rating">
+                                        <div><span class="rating-no">4.4</span></div>
+                                        <div>
+                                            <span  class="star">&starf;</span>
+                                            <span  class="star">&starf;</span>
+                                            <span  class="star">&starf;</span>  
+                                            <span  class="star">&starf;</span>
+                                            <span><i class="fa fa-star-half-full half-star"></i></span>
+                                        </div>
+                                        <div>
+                                            <span class="course-reviews">(3,123)</span>
+                                        </div>
+                                    </div>
+                                    <span class="course-chrg">&#8377;3,399</span>
+                                </div>
+                            </div>
+                            <div class="content-item">
+                                <div class="div-img"><img src="images/students_view7.jpg" alt="python course"/></div>
+                                <div class="div-caption">
+                                    <h1>Learn Python: The Complete Python Programming Course</h1>
+                                    <span class="img-tag">Avinash Jain, The Codex</span>
+                                    <div class="course-rating">
+                                        <div><span class="rating-no">4.4</span></div>
+                                        <div>
+                                            <span  class="star">&starf;</span>
+                                            <span  class="star">&starf;</span>
+                                            <span  class="star">&starf;</span>  
+                                            <span  class="star">&starf;</span>
+                                            <span><i class="fa fa-star-half-full half-star"></i></span>
+                                        </div>
+                                        <div>
+                                            <span class="course-reviews">(3,123)</span>
+                                        </div>
+                                    </div>
+                                    <span class="course-chrg">&#8377;3,399</span>
+                                </div>
+                            </div>
+                            <div class="content-item">
+                                <div class="div-img"><img src="images/students_view8.jpg" alt="python course"/></div>
+                                <div class="div-caption">
+                                    <h1>Learn Python: The Complete Python Programming Course</h1>
+                                    <span class="img-tag">Avinash Jain, The Codex</span>
+                                    <div class="course-rating">
+                                        <div><span class="rating-no">4.4</span></div>
+                                        <div>
+                                            <span  class="star">&starf;</span>
+                                            <span  class="star">&starf;</span>
+                                            <span  class="star">&starf;</span>  
+                                            <span  class="star">&starf;</span>
+                                            <span><i class="fa fa-star-half-full half-star"></i></span>
+                                        </div>
+                                        <div>
+                                            <span class="course-reviews">(3,123)</span>
+                                        </div>
+                                    </div>
+                                    <span class="course-chrg">&#8377;3,399</span>
+                                </div>
+                            </div>
+                            <div class="content-item">
+                                <div class="div-img"><img src="images/students_view9.jpg" alt="python course"/></div>
+                                <div class="div-caption">
+                                    <h1>Learn Python: The Complete Python Programming Course</h1>
+                                    <span class="img-tag">Avinash Jain, The Codex</span>
+                                    <div class="course-rating">
+                                        <div><span class="rating-no">4.4</span></div>
+                                        <div>
+                                            <span  class="star">&starf;</span>
+                                            <span  class="star">&starf;</span>
+                                            <span  class="star">&starf;</span>  
+                                            <span  class="star">&starf;</span>
+                                            <span><i class="fa fa-star-half-full half-star"></i></span>
+                                        </div>
+                                        <div>
+                                            <span class="course-reviews">(3,123)</span>
+                                        </div>
+                                    </div>
+                                    <span class="course-chrg">&#8377;3,399</span>
+                                </div>
+                            </div>
+                </div>
+                <div id="popularCategory">
+                    <h1 class="category-heading">Top categories</h1>
+                    <div class="course-section">
+                        <div class="stream">
+                            <img src="images/Design.jpg" alt="design stream" />
+                            <h1>Design</h1>
+                        </div>
+                        <div class="stream">
+                            <img src="images/development.jpg" alt="development stream" />
+                            <h1>Development</h1>
+                        </div>
+                        <div class="stream">
+                            <img src="images/marketing.jpg" alt="marketing stream" />
+                            <h1>Marketing</h1>
+                        </div>
+                        <div class="stream">
+                            <img src="images/it&software.jpg" alt="software stream" />
+                            <h1>IT and Software</h1>
+                        </div>
+                        <div class="stream">
+                            <img src="images/personaldevelopment.jpg" alt="personalDevelopment stream" />
+                            <h1>Personal Development</h1>
+                        </div>
+                        <div class="stream">
+                            <img src="images/Business.jpg" alt="business stream" />
+                            <h1>Business</h1>
+                        </div>
+                        <div class="stream">
+                            <img src="images/photography.jpg" alt="photography stream" />
+                            <h1>Photography</h1>
+                        </div>
+                        <div class="stream">
+                            <img src="images/music.jpg" alt="music stream" />
+                            <h1>Music</h1>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div id="diffCourses">
+                    <div class="course-find">
+                        <h1 class="category-heading">Featured topics by category</h1>
+                    </div>
+                    <div class="course-section mrg-top">
+                        <div class="stream mrg-left stream-dim">
+                            <h1 class="category-heading fnt-sz fnt-bld">Development</h1>
+                            <div class="item-topic">
+                                <div><a href="#" target="_blank" class="topic fnt-bld">Python</a></div>
+                                <div><span class="course-reviews">36,305,215 students</span></div>
+                            </div>
+                            <div class="item-topic">
+                                <div><a href="#" target="_blank" class="topic fnt-bld">Web Development</a></div>
+                                <div><span class="course-reviews">11,405,325 students</span></div>
+                            </div>
+                            <div class="item-topic">
+                                <div><a href="#" target="_blank" class="topic fnt-bld">Machine Learning</a></div>
+                                <div><span class="course-reviews">7,066,089 students</span></div>
+                            </div>
+                        </div>
+                        <div class="stream mrg-left stream-dim">
+                            <h1 class="category-heading fnt-sz fnt-bld">Business</h1>
+                            <div class="item-topic">
+                                <div><a href="#" target="_blank" class="topic fnt-bld">Financial Analysis</a></div>
+                                <div><span class="course-reviews">36,305,215 students</span></div>
+                            </div>
+                            <div class="item-topic">
+                                <div><a href="#" target="_blank" class="topic fnt-bld">SQL</a></div>
+                                <div><span class="course-reviews">11,405,325 students</span></div>
+                            </div>
+                            <div class="item-topic">
+                                <div><a href="#" target="_blank" class="topic fnt-bld">PMP</a></div>
+                                <div><span class="course-reviews">7,066,089 students</span></div>
+                            </div>
+                        </div>
+                        <div class="stream mrg-left stream-dim">
+                            <h1 class="category-heading fnt-sz fnt-bld">IT and Software</h1>
+                            <div class="item-topic">
+                                <div><a href="#" target="_blank" class="topic fnt-bld">AWS Certification</a></div>
+                                <div><span class="course-reviews">36,305,215 students</span></div>
+                            </div>
+                            <div class="item-topic">
+                                <div><a href="#" target="_blank" class="topic fnt-bld">Ethical Hacking</a></div>
+                                <div><span class="course-reviews">11,405,325 students</span></div>
+                            </div>
+                            <div class="item-topic">
+                                <div><a href="#" target="_blank" class="topic fnt-bld">Cyber Security</a></div>
+                                <div><span class="course-reviews">7,066,089 students</span></div>
+                            </div>
+                        </div>
+                        <div class="stream mrg-left stream-dim">
+                            <h1 class="category-heading fnt-sz fnt-bld">Design</h1>
+                            <div class="item-topic">
+                                <div><a href="#" target="_blank" class="topic fnt-bld">Photoshop</a></div>
+                                <div><span class="course-reviews">36,305,215 students</span></div>
+                            </div>
+                            <div class="item-topic">
+                                <div><a href="#" target="_blank" class="topic fnt-bld">Graphic Design</a></div>
+                                <div><span class="course-reviews">11,405,325 students</span></div>
+                            </div>
+                            <div class="item-topic topic-bottom">
+                                <div><a href="#" target="_blank" class="topic fnt-bld">Drawing</a></div>
+                                <div><span class="course-reviews">7,066,089 students</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="explore">Explore more topics</button>
+                </div>
+                <div id="instructorDiv">
+                    <div class="flex-div">
+                        <div class="img-instr"><img src="images/instructor1.jpg" alt="instructor" /></div>
+                        <div class="caption-instr">
+                            <div class="strong-font">
+                                <h1>Become an instructor</h1>
+                            </div>
+                            <div>
+                                <p>Instructors from around the world teach millions of students on Udemy. We provide the tools and skills to teach what you love.</p>
+                            </div>
+                            <div>
+                                <a href="#" target="_blank">
+                                    <button type="button" class="dark-btn  bold-font">Start teaching today</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="important-ads">
+                        <h1 class="strong-font">Trusted by companies of all sizes</h1>
+                        <img src="images/nasdaq-dark.svg" alt="Nasdaq company" />
+                        <img src="images/nasdaq-dark.svg" alt="Nasdaq company" />
+                        <img src="images/nasdaq-dark.svg" alt="Nasdaq company" />
+                        <img src="images/nasdaq-dark.svg" alt="Nasdaq company" />
+                    </div>
+                    <div class="flex-div">
+                        <div class="caption-instr">
+                            <div class="strong-font">
+                                <img src="images/logo-ub.svg" alt="Udemy Business" />
+                            </div>
+                            <div>
+                                <p>Get unlimited access to 17,000+ of Udemy’s top courses for your team. Learn and improve skills across business, tech, design, and more.</p>
+                            </div>
+                            <div>
+                                <a href="#" target="_blank">
+                                    <button type="button" class="dark-btn  bold-font">Get Udemy Business</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="img-instr"><img src="images/instructor2.jpg" alt="business instructor" /></div>
+                    </div>
+                    <div class="flex-div">
+                        <div class="img-instr"><img src="images/step-up.jpg" alt="education" /></div>
+                        <div class="caption-instr">
+                            <div class="strong-font">
+                                <h1>Transform your life through education</h1>
+                            </div>
+                            <div>
+                                <p>Learners around the world are launching new careers, advancing in their fields, and enriching their lives.</p>
+                            </div>
+                            <div>
+                                <a href="#" target="_blank">
+                                    <button type="button" class="dark-btn  bold-font">Find out how</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+
+
+
+
+
+
+
+            <footer>
+                <div class="bottom1">
+                    <div class="attr left">
+                        <ul>
+                            <li><a href="#">Udemy Business</a></li>
+                            <li><a href="#">Teach on Udemy</a></li>
+                            <li><a href="#">Get the app</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="attr left">
+                        <ul>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Help and Support</a></li>
+                            <li><a href="#">Affiliate</a></li>
+                            <li><a href="#">Investors</a></li>
+                        </ul>
+                    </div>
+                    <div class="attr left">
+                        <ul>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">Cookie settings</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                            <li><a href="#">Accessibility statement</a></li>
+                        </ul>
+                    </div>
+                    <div class="right-bordered">
+                        <a href="#" target="_blank">
+                            <div id="lang-chng">
+                                <div id="lang-img"><img src="images/lang-icon.jpg"/></div>
+                                <div id="lang">English</div>
                             </div>
                         </a>
                     </div>
                 </div>
+                <div class="bottom2">
+                    <div id="brand" class="bnd-inline">
+                        <a href="#" target="_blank"> <img src="images/logo-udemy-inverted.svg" alt="Udemy logo"/> </a>
+                    </div>
+                    <div id="copyright">
+                        <span>&copy; 2022 Vikash</span>
+                    </div>
+                </div>
+            </footer>
+               </div>
             </div>
-        </header>
-        <div class="container">
-            <div class="box promo">
-                <div id="carouselExampleControls" class="carousel  slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active prm">
-                            <img src="images/frontimg.png" class="d-block w-100" alt="one"/>
-                            <div class="promoText">
-                                <h1>Our biggest sale of the season</h1>
-                                <h4>Stock up on courses from ₹389. From coding to leadership to photography, you can learn almost anything. Ends Aug. 31.</h4>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/slide1.jpg" class="d-block w-100" alt="two"/>
-                            <div class="promoText">
-                                <h1>Learning that gets you</h1>
-                                <h4>Skills for your present (and your future). Get started with us.</h4>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                          </button>
-                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                            <span class=".dot"></span>
-                            <span class="carousel-control-next-icon arrow-clr" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                          </button>
-                        </div>   
-                </div>
-            </div>
-        
-
-
-            <div id="courses">
-                <div class="course-heading">
-                    <h1>A broad selection of courses</h1>
-                    <span>Choose from 204,000 online video courses with new additions published every month</span>
-                </div>
-                <div class="course-body">
-                    <div class="course-category">
-                        <ul>
-                            <li><a href="#" target="_blank"><h4>Python</h4></a></li>
-                            <li><a href="#" target="_blank"><h4>Excel</h4></a></li>
-                            <li><a href="#" target="_blank"><h4>Web Development</h4></a></li>
-                            <li><a href="#" target="_blank"><h4>JavaScript</h4></a></li>
-                            <li><a href="#" target="_blank"><h4>Data Science</h4></a></li>
-                            <li><a href="#" target="_blank"><h4>AWS Certification</h4></a></li>
-                            <li><a href="#" target="_blank"><h4>Drawing</h4></a></li>
-                        </ul>
-                        <div class="course-content">
-                            <div class="content-heading">
-                                <h1>Expand your career opportunities with Python</h1>
-                                <p>Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful language. Its simple syntax and readability makes Python perfect for Flask, Django, data science, and machine learning. You’ll learn how to build everything from games to sites to apps. Choose from a range of courses that will appeal to both beginners and advanced developers alike.</p>
-                                <button class="explore">Explore Python</button>
-                            </div>
-                            <div class="my-slide">
-                                <div class="owl-carousel owl-theme">
-                                    <div class="content-item">
-                                        <div class="div-img"><img src="images/course_img1.jpg" alt="python course"/></div>
-                                        <div class="div-caption">
-                                            <h1>Learn Python: The Complete Python Programming Course</h1>
-                                            <span class="img-tag">Avinash Jain, The Codex</span>
-                                            <div class="course-rating">
-                                                <div><span class="rating-no">4.4</span></div>
-                                                <div>
-                                                    <span  class="star">&starf;</span>
-                                                    <span  class="star">&starf;</span>
-                                                    <span  class="star">&starf;</span>  
-                                                    <span  class="star">&starf;</span>
-                                                    <span><i class="fa fa-star-half-full half-star"></i></span>
-                                                </div>
-                                                <div>
-                                                    <span class="course-reviews">(3,123)</span>
-                                                </div>
-                                            </div>
-                                            <span class="course-chrg">&#8377;3,399</span>
-                                        </div>
-                                    </div>
-                                    <div class="content-item">
-                                        <div class="div-img"><img src="images/course_img2.jpg" alt="python course"/></div>
-                                        <div class="div-caption">
-                                            <h1>Learn Python: The Complete Python Programming Course</h1>
-                                            <span class="img-tag">Avinash Jain, The Codex</span>
-                                            <div class="course-rating">
-                                                <div><span class="rating-no">4.4</span></div>
-                                                <div>
-                                                    <span  class="star">&starf;</span>
-                                                    <span  class="star">&starf;</span>
-                                                    <span  class="star">&starf;</span>  
-                                                    <span  class="star">&starf;</span>
-                                                    <span><i class="fa fa-star-half-full half-star"></i></span>
-                                                </div>
-                                                <div>
-                                                    <span class="course-reviews">(3,123)</span>
-                                                </div>
-                                            </div>
-                                            <span class="course-chrg">&#8377;3,399</span>
-                                        </div>
-                                    </div>
-                                    <div class="content-item">
-                                        <div class="div-img"><img src="images/course_img3.jpg" alt="python course"/></div>
-                                        <div class="div-caption">
-                                            <h1>Learn Python: The Complete Python Programming Course</h1>
-                                            <span class="img-tag">Avinash Jain, The Codex</span>
-                                            <div class="course-rating">
-                                                <div><span class="rating-no">4.4</span></div>
-                                                <div>
-                                                    <span  class="star">&starf;</span>
-                                                    <span  class="star">&starf;</span>
-                                                    <span  class="star">&starf;</span>  
-                                                    <span  class="star">&starf;</span>
-                                                    <span><i class="fa fa-star-half-full half-star"></i></span>
-                                                </div>
-                                                <div>
-                                                    <span class="course-reviews">(3,123)</span>
-                                                </div>
-                                            </div>
-                                            <span class="course-chrg">&#8377;3,399</span>
-                                        </div>
-                                    </div>
-                                    <div class="content-item">
-                                        <div class="div-img"><img src="images/course_img4.jpg" alt="python course"/></div>
-                                        <div class="div-caption">
-                                            <h1>Learn Python: The Complete Python Programming Course</h1>
-                                            <span class="img-tag">Avinash Jain, The Codex</span>
-                                            <div class="course-rating">
-                                                <div><span class="rating-no">4.4</span></div>
-                                                <div>
-                                                    <span  class="star">&starf;</span>
-                                                    <span  class="star">&starf;</span>
-                                                    <span  class="star">&starf;</span>  
-                                                    <span  class="star">&starf;</span>
-                                                    <span><i class="fa fa-star-half-full half-star"></i></span>
-                                                </div>
-                                                <div>
-                                                    <span class="course-reviews">(3,123)</span>
-                                                </div>
-                                            </div>
-                                            <span class="course-chrg">&#8377;3,399</span>
-                                        </div>
-                                    </div>
-                                    <div class="content-item">
-                                        <div class="div-img"><img src="images/course_img5.jpg" alt="python course"/></div>
-                                        <div class="div-caption">
-                                            <h1>Learn Python: The Complete Python Programming Course</h1>
-                                            <span class="img-tag">Avinash Jain, The Codex</span>
-                                            <div class="course-rating">
-                                                <div><span class="rating-no">4.4</span></div>
-                                                <div>
-                                                    <span  class="star">&starf;</span>
-                                                    <span  class="star">&starf;</span>
-                                                    <span  class="star">&starf;</span>  
-                                                    <span  class="star">&starf;</span>
-                                                    <span><i class="fa fa-star-half-full half-star"></i></span>
-                                                </div>
-                                                <div>
-                                                    <span class="course-reviews">(3,123)</span>
-                                                </div>
-                                            </div>
-                                            <span class="course-chrg">&#8377;3,399</span>
-                                        </div>
-                                    </div>
-                                    <div class="content-item">
-                                        <div class="div-img"><img src="images/course_img6.jpg" alt="python course"/></div>
-                                        <div class="div-caption">
-                                            <h1>Learn Python: The Complete Python Programming Course</h1>
-                                            <span class="img-tag">Avinash Jain, The Codex</span>
-                                            <div class="course-rating">
-                                                <div><span class="rating-no">4.4</span></div>
-                                                <div>
-                                                    <span  class="star">&starf;</span>
-                                                    <span  class="star">&starf;</span>
-                                                    <span  class="star">&starf;</span>  
-                                                    <span  class="star">&starf;</span>
-                                                    <span><i class="fa fa-star-half-full half-star"></i></span>
-                                                </div>
-                                                <div>
-                                                    <span class="course-reviews">(3,123)</span>
-                                                </div>
-                                            </div>
-                                            <span class="course-chrg">&#8377;3,399</span>
-                                        </div>
-                                    </div>
-                                    <div class="content-item">
-                                        <div class="div-img"><img src="images/course_img7.jpg" alt="python course"/></div>
-                                        <div class="div-caption">
-                                            <h1>Learn Python: The Complete Python Programming Course</h1>
-                                            <span class="img-tag">Avinash Jain, The Codex</span>
-                                            <div class="course-rating">
-                                                <div><span class="rating-no">4.4</span></div>
-                                                <div>
-                                                    <span  class="star">&starf;</span>
-                                                    <span  class="star">&starf;</span>
-                                                    <span  class="star">&starf;</span>  
-                                                    <span  class="star">&starf;</span>
-                                                    <span><i class="fa fa-star-half-full half-star"></i></span>
-                                                </div>
-                                                <div>
-                                                    <span class="course-reviews">(3,123)</span>
-                                                </div>
-                                            </div>
-                                            <span class="course-chrg">&#8377;3,399</span>
-                                        </div>
-                                    </div>
-                                    <div class="content-item">
-                                        <div class="div-img"><img src="images/course_img8.jpg" alt="python course"/></div>
-                                        <div class="div-caption">
-                                            <h1>Learn Python: The Complete Python Programming Course</h1>
-                                            <span class="img-tag">Avinash Jain, The Codex</span>
-                                            <div class="course-rating">
-                                                <div><span class="rating-no">4.7</span></div>
-                                                <div>
-                                                    <span  class="star">&starf;</span>
-                                                    <span  class="star">&starf;</span>
-                                                    <span  class="star">&starf;</span>  
-                                                    <span  class="star">&starf;</span>
-                                                    <span><i class="fa fa-star-half-full half-star"></i></span>
-                                                </div>
-                                                <div>
-                                                    <span class="course-reviews">(139,562)</span>
-                                                </div>
-                                            </div>
-                                            <span class="course-chrg">&#8377;389 <delete>&#8377;3,499</delete></span>
-                                        </div>
-                                    </div>
-                                    <div class="content-item">
-                                        <div class="div-img"><img src="images/course_img9.jpg" alt="javascript course"/></div>
-                                        <div class="div-caption">
-                                            <h1>The Complete JavaScript Course 2022: From Zero to Expert!</h1>
-                                            <span class="img-tag">Jonas Schmedtmann</span>
-                                            <div class="course-rating">
-                                                <div><span class="rating-no">4.8</span></div>
-                                                <div>
-                                                    <span  class="star">&starf;</span>
-                                                    <span  class="star">&starf;</span>
-                                                    <span  class="star">&starf;</span>  
-                                                    <span  class="star">&starf;</span>
-                                                    <span><i class="fa fa-star-full star"></i></span>
-                                                </div>
-                                                <div>
-                                                    <span class="course-reviews">(147,313)</span>
-                                                </div>
-                                            </div>
-                                            <span class="course-chrg">&#8377;389<delete>&#8377;3,499</delete></span>
-                                        </div>
-                                    </div>
-                                    <div class="content-item">
-                                        <div class="div-img"><img src="images/course_img10.jpg" alt="python course"/></div>
-                                        <div class="div-caption">
-                                            <h1>Learning Python for Data Analysis and Visualization</h1>
-                                            <span class="img-tag">Jose Portilla</span>
-                                            <div class="course-rating">
-                                                <div><span class="rating-no">4.4</span></div>
-                                                <div>
-                                                    <span  class="star">&starf;</span>
-                                                    <span  class="star">&starf;</span>
-                                                    <span  class="star">&starf;</span>  
-                                                    <span  class="star">&starf;</span>
-                                                    <span><i class="fa fa-star-half-full half-star"></i></span>
-                                                </div>
-                                                <div>
-                                                    <span class="course-reviews">(5,123)</span>
-                                                </div>
-                                            </div>
-                                            <span class="course-chrg">&#8377;3,499</span>
-                                        </div>
-                                    </div>
-                                    <div class="content-item">
-                                        <div class="div-img"><img src="images/course_img11.jpg" alt="python course"/></div>
-                                        <div class="div-caption">
-                                            <h1>Learning Python for Data Analysis and Visualization</h1>
-                                            <span class="img-tag">Jose Portilla</span>
-                                            <div class="course-rating">
-                                                <div><span class="rating-no">4.4</span></div>
-                                                <div>
-                                                    <span  class="star">&starf;</span>
-                                                    <span  class="star">&starf;</span>
-                                                    <span  class="star">&starf;</span>  
-                                                    <span  class="star">&starf;</span>
-                                                    <span><i class="fa fa-star-half-full half-star"></i></span>
-                                                </div>
-                                                <div>
-                                                    <span class="course-reviews">(5,123)</span>
-                                                </div>
-                                            </div>
-                                            <span class="course-chrg">&#8377;3,499</span>
-                                        </div>
-                                    </div>
-                                    <div class="content-item">
-                                        <div class="div-img"><img src="images/course_img12.jpg" alt="python course"/></div>
-                                        <div class="div-caption">
-                                            <h1>Learning Python for Data Analysis and Visualization</h1>
-                                            <span class="img-tag">Jose Portilla</span>
-                                            <div class="course-rating">
-                                                <div><span class="rating-no">4.4</span></div>
-                                                <div>
-                                                    <span  class="star">&starf;</span>
-                                                    <span  class="star">&starf;</span>
-                                                    <span  class="star">&starf;</span>  
-                                                    <span  class="star">&starf;</span>
-                                                    <span><i class="fa fa-star-half-full half-star"></i></span>
-                                                </div>
-                                                <div>
-                                                    <span class="course-reviews">(5,123)</span>
-                                                </div>
-                                            </div>
-                                            <span class="course-chrg">&#8377;3,499</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            <div id="studentsView">
-                <h1 class="category-heading">Students are viewing</h1>
-                <div class="my-slide">
-                    <div class="owl-carousel owl-theme">
-                        <div class="content-item">
-                            <div class="div-img"><img src="images/students_view1.jpg" alt="WebDevelopment course"/></div>
-                            <div class="div-caption">
-                                <h1>The Complete 2022 Web Development Bootcamp</h1>
-                                <span class="img-tag">Dr. Angela Yu</span>
-                                <div class="course-rating">
-                                    <div><span class="rating-no">4.7</span></div>
-                                    <div>
-                                        <span  class="star">&starf;</span>
-                                        <span  class="star">&starf;</span>
-                                        <span  class="star">&starf;</span>  
-                                        <span  class="star">&starf;</span>
-                                        <span><i class="fa fa-star-half-full half-star"></i></span>
-                                    </div>
-                                    <div>
-                                        <span class="course-reviews">(213,276)</span>
-                                    </div>
-                                </div>
-                                <span class="course-chrg">&#8377;389 <delete>&#8377;3,499</delete></span>
-                            </div>
-                        </div>
-                        <div class="content-item">
-                            <div class="div-img"><img src="images/students_view2.jpg" alt="100 DoC course"/></div>
-                            <div class="div-caption">
-                                <h1>100 Days of Code:The Complete Python Pro Bootcamp for 2022</h1>
-                                <span class="img-tag">Dr. Angela Yu</span>
-                                <div class="course-rating">
-                                    <div><span class="rating-no">4.7</span></div>
-                                    <div>
-                                        <span  class="star">&starf;</span>
-                                        <span  class="star">&starf;</span>
-                                        <span  class="star">&starf;</span>  
-                                        <span  class="star">&starf;</span>
-                                        <span><i class="fa fa-star-half-full half-star"></i></span>
-                                    </div>
-                                    <div>
-                                        <span class="course-reviews">(128,878)</span>
-                                    </div>
-                                </div>
-                                <span class="course-chrg">&#8377;389 <delete>&#8377;3,499</delete></span>
-                            </div>
-                        </div>
-                        <div class="content-item">
-                            <div class="div-img"><img src="images/students_view3.jpg" alt="python course"/></div>
-                            <div class="div-caption">
-                                <h1>Ultimate AWS Certified Solutions Architect Associate...</h1>
-                                <span class="img-tag">Stephane Maarek | AWS Certified Cloud Pra..</span>
-                                <div class="course-rating">
-                                    <div><span class="rating-no">4.4</span></div>
-                                    <div>
-                                        <span  class="star">&starf;</span>
-                                        <span  class="star">&starf;</span>
-                                        <span  class="star">&starf;</span>  
-                                        <span  class="star">&starf;</span>
-                                        <span><i class="fa fa-star-half-full half-star"></i></span>
-                                    </div>
-                                    <div>
-                                        <span class="course-reviews">(3,123)</span>
-                                    </div>
-                                </div>
-                                <span class="course-chrg">&#8377;3,399</span>
-                            </div>
-                        </div>
-                        <div class="content-item">
-                            <div class="div-img"><img src="images/students_view4.jpg" alt="python course"/></div>
-                            <div class="div-caption">
-                                <h1>The Complete JavaScript Course 2022: From Zero to Expert!</h1>
-                                <span class="img-tag">Jonas Schmedtmann</span>
-                                <div class="course-rating">
-                                    <div><span class="rating-no">4.8</span></div>
-                                    <div>
-                                        <span  class="star">&starf;</span>
-                                        <span  class="star">&starf;</span>
-                                        <span  class="star">&starf;</span>  
-                                        <span  class="star">&starf;</span>
-                                        <span><i class="fa fa-star-full star"></i></span>
-                                    </div>
-                                    <div>
-                                        <span class="course-reviews">(147,313)</span>
-                                    </div>
-                                </div>
-                                <span class="course-chrg">&#8377;389<delete>&#8377;3,499</delete></span>
-                            </div>
-                        </div>
-                        <div class="content-item">
-                            <div class="div-img"><img src="images/students_view5.jpg" alt="react course"/></div>
-                            <div class="div-caption">
-                                <h1>React - The Complete Guide(incl Hooks, React Router, Redux)</h1>
-                                <span class="img-tag">Academind by Maximillian</span>
-                                <div class="course-rating">
-                                    <div><span class="rating-no">4.6</span></div>
-                                    <div>
-                                        <span  class="star">&starf;</span>
-                                        <span  class="star">&starf;</span>
-                                        <span  class="star">&starf;</span>  
-                                        <span  class="star">&starf;</span>
-                                        <span><i class="fa fa-star-half-full half-star"></i></span>
-                                    </div>
-                                    <div>
-                                        <span class="course-reviews">(157,703)</span>
-                                    </div>
-                                </div>
-                                <span class="course-chrg">&#8377;389</span>
-                            </div>
-                        </div>
-                        <div class="content-item">
-                            <div class="div-img"><img src="images/students_view6.jpg" alt="python course"/></div>
-                            <div class="div-caption">
-                                <h1>Learn Python: The Complete Python Programming Course</h1>
-                                <span class="img-tag">Avinash Jain, The Codex</span>
-                                <div class="course-rating">
-                                    <div><span class="rating-no">4.4</span></div>
-                                    <div>
-                                        <span  class="star">&starf;</span>
-                                        <span  class="star">&starf;</span>
-                                        <span  class="star">&starf;</span>  
-                                        <span  class="star">&starf;</span>
-                                        <span><i class="fa fa-star-half-full half-star"></i></span>
-                                    </div>
-                                    <div>
-                                        <span class="course-reviews">(3,123)</span>
-                                    </div>
-                                </div>
-                                <span class="course-chrg">&#8377;3,399</span>
-                            </div>
-                        </div>
-                        <div class="content-item">
-                            <div class="div-img"><img src="images/students_view7.jpg" alt="python course"/></div>
-                            <div class="div-caption">
-                                <h1>Learn Python: The Complete Python Programming Course</h1>
-                                <span class="img-tag">Avinash Jain, The Codex</span>
-                                <div class="course-rating">
-                                    <div><span class="rating-no">4.4</span></div>
-                                    <div>
-                                        <span  class="star">&starf;</span>
-                                        <span  class="star">&starf;</span>
-                                        <span  class="star">&starf;</span>  
-                                        <span  class="star">&starf;</span>
-                                        <span><i class="fa fa-star-half-full half-star"></i></span>
-                                    </div>
-                                    <div>
-                                        <span class="course-reviews">(3,123)</span>
-                                    </div>
-                                </div>
-                                <span class="course-chrg">&#8377;3,399</span>
-                            </div>
-                        </div>
-                        <div class="content-item">
-                            <div class="div-img"><img src="images/students_view8.jpg" alt="python course"/></div>
-                            <div class="div-caption">
-                                <h1>Learn Python: The Complete Python Programming Course</h1>
-                                <span class="img-tag">Avinash Jain, The Codex</span>
-                                <div class="course-rating">
-                                    <div><span class="rating-no">4.4</span></div>
-                                    <div>
-                                        <span  class="star">&starf;</span>
-                                        <span  class="star">&starf;</span>
-                                        <span  class="star">&starf;</span>  
-                                        <span  class="star">&starf;</span>
-                                        <span><i class="fa fa-star-half-full half-star"></i></span>
-                                    </div>
-                                    <div>
-                                        <span class="course-reviews">(3,123)</span>
-                                    </div>
-                                </div>
-                                <span class="course-chrg">&#8377;3,399</span>
-                            </div>
-                        </div>
-                        <div class="content-item">
-                            <div class="div-img"><img src="images/students_view9.jpg" alt="python course"/></div>
-                            <div class="div-caption">
-                                <h1>Learn Python: The Complete Python Programming Course</h1>
-                                <span class="img-tag">Avinash Jain, The Codex</span>
-                                <div class="course-rating">
-                                    <div><span class="rating-no">4.4</span></div>
-                                    <div>
-                                        <span  class="star">&starf;</span>
-                                        <span  class="star">&starf;</span>
-                                        <span  class="star">&starf;</span>  
-                                        <span  class="star">&starf;</span>
-                                        <span><i class="fa fa-star-half-full half-star"></i></span>
-                                    </div>
-                                    <div>
-                                        <span class="course-reviews">(3,123)</span>
-                                    </div>
-                                </div>
-                                <span class="course-chrg">&#8377;3,399</span>
-                            </div>
-                        </div>
-            </div>
-            <div id="popularCategory">
-                <h1 class="category-heading">Top categories</h1>
-                <div class="course-section">
-                    <div class="stream">
-                        <img src="images/Design.jpg" alt="design stream" />
-                        <h1>Design</h1>
-                    </div>
-                    <div class="stream">
-                        <img src="images/development.jpg" alt="development stream" />
-                        <h1>Development</h1>
-                    </div>
-                    <div class="stream">
-                        <img src="images/marketing.jpg" alt="marketing stream" />
-                        <h1>Marketing</h1>
-                    </div>
-                    <div class="stream">
-                        <img src="images/it&software.jpg" alt="software stream" />
-                        <h1>IT and Software</h1>
-                    </div>
-                    <div class="stream">
-                        <img src="images/personaldevelopment.jpg" alt="personalDevelopment stream" />
-                        <h1>Personal Development</h1>
-                    </div>
-                    <div class="stream">
-                        <img src="images/Business.jpg" alt="business stream" />
-                        <h1>Business</h1>
-                    </div>
-                    <div class="stream">
-                        <img src="images/photography.jpg" alt="photography stream" />
-                        <h1>Photography</h1>
-                    </div>
-                    <div class="stream">
-                        <img src="images/music.jpg" alt="music stream" />
-                        <h1>Music</h1>
-                    </div>
-                </div>
-                
-            </div>
-            <div id="diffCourses">
-                <div class="course-find">
-                    <h1 class="category-heading">Featured topics by category</h1>
-                </div>
-                <div class="course-section mrg-top">
-                    <div class="stream mrg-left stream-dim">
-                        <h1 class="category-heading fnt-sz fnt-bld">Development</h1>
-                        <div class="item-topic">
-                            <div><a href="#" target="_blank" class="topic fnt-bld">Python</a></div>
-                            <div><span class="course-reviews">36,305,215 students</span></div>
-                        </div>
-                        <div class="item-topic">
-                            <div><a href="#" target="_blank" class="topic fnt-bld">Web Development</a></div>
-                            <div><span class="course-reviews">11,405,325 students</span></div>
-                        </div>
-                        <div class="item-topic">
-                            <div><a href="#" target="_blank" class="topic fnt-bld">Machine Learning</a></div>
-                            <div><span class="course-reviews">7,066,089 students</span></div>
-                        </div>
-                    </div>
-                    <div class="stream mrg-left stream-dim">
-                        <h1 class="category-heading fnt-sz fnt-bld">Business</h1>
-                        <div class="item-topic">
-                            <div><a href="#" target="_blank" class="topic fnt-bld">Financial Analysis</a></div>
-                            <div><span class="course-reviews">36,305,215 students</span></div>
-                        </div>
-                        <div class="item-topic">
-                            <div><a href="#" target="_blank" class="topic fnt-bld">SQL</a></div>
-                            <div><span class="course-reviews">11,405,325 students</span></div>
-                        </div>
-                        <div class="item-topic">
-                            <div><a href="#" target="_blank" class="topic fnt-bld">PMP</a></div>
-                            <div><span class="course-reviews">7,066,089 students</span></div>
-                        </div>
-                    </div>
-                    <div class="stream mrg-left stream-dim">
-                        <h1 class="category-heading fnt-sz fnt-bld">IT and Software</h1>
-                        <div class="item-topic">
-                            <div><a href="#" target="_blank" class="topic fnt-bld">AWS Certification</a></div>
-                            <div><span class="course-reviews">36,305,215 students</span></div>
-                        </div>
-                        <div class="item-topic">
-                            <div><a href="#" target="_blank" class="topic fnt-bld">Ethical Hacking</a></div>
-                            <div><span class="course-reviews">11,405,325 students</span></div>
-                        </div>
-                        <div class="item-topic">
-                            <div><a href="#" target="_blank" class="topic fnt-bld">Cyber Security</a></div>
-                            <div><span class="course-reviews">7,066,089 students</span></div>
-                        </div>
-                    </div>
-                    <div class="stream mrg-left stream-dim">
-                        <h1 class="category-heading fnt-sz fnt-bld">Design</h1>
-                        <div class="item-topic">
-                            <div><a href="#" target="_blank" class="topic fnt-bld">Photoshop</a></div>
-                            <div><span class="course-reviews">36,305,215 students</span></div>
-                        </div>
-                        <div class="item-topic">
-                            <div><a href="#" target="_blank" class="topic fnt-bld">Graphic Design</a></div>
-                            <div><span class="course-reviews">11,405,325 students</span></div>
-                        </div>
-                        <div class="item-topic topic-bottom">
-                            <div><a href="#" target="_blank" class="topic fnt-bld">Drawing</a></div>
-                            <div><span class="course-reviews">7,066,089 students</span></div>
-                        </div>
-                    </div>
-                </div>
-                <button class="explore">Explore more topics</button>
-            </div>
-            <div id="instructorDiv">
-                <div class="flex-div">
-                    <div class="img-instr"><img src="images/instructor1.jpg" alt="instructor" /></div>
-                    <div class="caption-instr">
-                        <div class="strong-font">
-                            <h1>Become an instructor</h1>
-                        </div>
-                        <div>
-                            <p>Instructors from around the world teach millions of students on Udemy. We provide the tools and skills to teach what you love.</p>
-                        </div>
-                        <div>
-                            <a href="#" target="_blank">
-                                <button type="button" class="dark-btn  bold-font">Start teaching today</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div id="important-ads">
-                    <h1 class="strong-font">Trusted by companies of all sizes</h1>
-                    <img src="images/nasdaq-dark.svg" alt="Nasdaq company" />
-                    <img src="images/nasdaq-dark.svg" alt="Nasdaq company" />
-                    <img src="images/nasdaq-dark.svg" alt="Nasdaq company" />
-                    <img src="images/nasdaq-dark.svg" alt="Nasdaq company" />
-                </div>
-                <div class="flex-div">
-                    <div class="caption-instr">
-                        <div class="strong-font">
-                            <img src="images/logo-ub.svg" alt="Udemy Business" />
-                        </div>
-                        <div>
-                            <p>Get unlimited access to 17,000+ of Udemy’s top courses for your team. Learn and improve skills across business, tech, design, and more.</p>
-                        </div>
-                        <div>
-                            <a href="#" target="_blank">
-                                <button type="button" class="dark-btn  bold-font">Get Udemy Business</button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="img-instr"><img src="images/instructor2.jpg" alt="business instructor" /></div>
-                </div>
-                <div class="flex-div">
-                    <div class="img-instr"><img src="images/step-up.jpg" alt="education" /></div>
-                    <div class="caption-instr">
-                        <div class="strong-font">
-                            <h1>Transform your life through education</h1>
-                        </div>
-                        <div>
-                            <p>Learners around the world are launching new careers, advancing in their fields, and enriching their lives.</p>
-                        </div>
-                        <div>
-                            <a href="#" target="_blank">
-                                <button type="button" class="dark-btn  bold-font">Find out how</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>    
-
-
-
-
-
-
-
-        <footer>
-            <div class="bottom1">
-                <div class="attr left">
-                    <ul>
-                        <li><a href="#">Udemy Business</a></li>
-                        <li><a href="#">Teach on Udemy</a></li>
-                        <li><a href="#">Get the app</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact us</a></li>
-                    </ul>
-                </div>
-                <div class="attr left">
-                    <ul>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Help and Support</a></li>
-                        <li><a href="#">Affiliate</a></li>
-                        <li><a href="#">Investors</a></li>
-                    </ul>
-                </div>
-                <div class="attr left">
-                    <ul>
-                        <li><a href="#">Terms</a></li>
-                        <li><a href="#">Privacy policy</a></li>
-                        <li><a href="#">Cookie settings</a></li>
-                        <li><a href="#">Sitemap</a></li>
-                        <li><a href="#">Accessibility statement</a></li>
-                    </ul>
-                </div>
-                <div class="right-bordered">
-                    <a href="#" target="_blank">
-                        <div id="lang-chng">
-                            <div id="lang-img"><img src="images/lang-icon.jpg"/></div>
-                            <div id="lang">English</div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="bottom2">
-                <div id="brand" class="bnd-inline">
-                    <a href="#" target="_blank"> <img src="images/logo-udemy-inverted.svg" alt="Udemy logo"/> </a>
-                </div>
-                <div id="copyright">
-                    <span>&copy; 2022 Vikash</span>
-                </div>
-            </div>
-        </footer>
+        </div>
+        <div id="Udemy_coupon">
+            <button onClick="closeCoupon()">&times;</button>
+        </div>
         <script>
+            window.onload = loadCoupon(),
+
             $('.owl-carousel').owlCarousel({
                 loop:true,
                 margin:10,

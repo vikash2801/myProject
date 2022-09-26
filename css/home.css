@@ -197,7 +197,7 @@ header{
     list-style: none;
 }
 .course-category ul li a{
-    color:gray;
+    color:#2e2f31;
     text-decoration: none;
 }
 .course-category ul li a:hover{
@@ -209,7 +209,7 @@ header{
     font-size:16px;
 }
 .course-content{
-    border:1px solid gray;
+    border:1px solid #2e2f31;
     padding: 30px 2%;
     margin-top:-15px;
 }
@@ -375,9 +375,9 @@ header{
 }
 #diffCourses{
     display: block;
-    padding: 65px 10%;
+    padding: 65px 12%;
     background: #f7f9fa;
-    margin:0 -8%;
+    margin:0 -11%;
 }
 .course-find h1{
     font-size: 22px;
@@ -453,18 +453,6 @@ header{
     background: #f7f9fa;
     margin:0 -11%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 footer{
     height:block;
     background: #1c1d1f;
@@ -539,5 +527,40 @@ footer{
     font-size:15px;
     font-family: calibri;
 }
+
+#Udemy_coupon{
+    height: 250px;
+    width: 500px;
+    background-color: blue;
+    z-index:100;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+   
+}
+#Udemy_body{
+    display: inline;
+}
+.darkTheme{
+    background: gray;
+    color: white;
+}
+.theme-img{
+    height: 20px;
+    width: 20px;
+}
+.day-night button{
+    border: none;
+    outline: none;
+}
+.whiteBoxShadow{
+    box-shadow: 0px 3px 10px #ddd;
+    
+}
+.fontWhite{
+    color: white;
+    background: gray;
+}
+
 
 
