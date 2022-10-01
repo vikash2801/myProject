@@ -529,9 +529,9 @@ footer{
 }
 
 #Udemy_coupon{
-    height: 250px;
-    width: 500px;
-    background-color: blue;
+    height: 350px;
+    width: 650px;
+    background-color: #ffffff;
     z-index:100;
     position: absolute;
     top: 15%;
@@ -542,7 +542,7 @@ footer{
     display: inline;
 }
 .darkTheme{
-    background: gray;
+    background: rgb(58, 57, 57);
     color: white;
 }
 .theme-img{
@@ -559,8 +559,50 @@ footer{
 }
 .fontWhite{
     color: white;
-    background: gray;
+    background: rgb(58, 57, 57);
 }
+.fontBlack{
+    color: black;
+}
+.card{
+    position: relative;
+    border: 1px solid black;
+}
+button.closeCoupon{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#Udemy_coupon .card-body{
+    position: absolute;
+    width: 60%;
+    left: 20%;
+    top: 10px;
+    text-align: center;
+    font-family: calibri;
+}
+#Udemy_coupon .card-body div{
+    margin: 15px 0;
+}
+#Udemy_coupon .card-body a{
+    text-decoration: none;
+}
+#Udemy_coupon .card-body img{
+    width: 91px;
+    height: 42px;
+}
+.CouponCode{
+    padding: 10px 20px;
+    border: 1px dotted gray;
+    font-weight: bold;
+    color: gray;
+}
+.copyCouponCode{
+    padding: 10px 20px;
+    background-color:#00aad1;
+    color: white;
+}
+
 
 
 

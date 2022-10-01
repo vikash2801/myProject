@@ -14,11 +14,13 @@ function changeTheme(){
     let myBody = document.body;
     let myHeader = document.getElementsByTagName('header');
     let myPromo = document.getElementsByClassName('promoText');
+    let myADText = document.getElementsByClassName('strong-font');
 
 
     myBody.classList.toggle('darkTheme');
     myHeader[0].classList.toggle('whiteBoxShadow');
     myPromo[0].classList.toggle('fontWhite');
     myPromo[1].classList.toggle('fontWhite');
+    myADText[1].classList.toggle('fontBlack');
 
 }

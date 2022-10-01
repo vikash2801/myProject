@@ -801,8 +801,16 @@
                </div>
             </div>
         </div>
-        <div id="Udemy_coupon">
-            <button onClick="closeCoupon()">&times;</button>
+        <div id="Udemy_coupon" class="card">
+                <button class="closeCoupon btn-close" onClick="closeCoupon()"></button>
+                <div class="card-body">
+                    <div><a href="#" target="_blank"> <img src="images/logo-udemy.svg" alt="Udemy logo"/> </a></div>
+                    <div><h5 class="text-muted">Up to 60% Off - Course starting at &#8377;500</h5></div>
+                    <div class="CouponCode">UDEAFFCCA420</div>
+                    <a href="#" target="_blank"><div class="copyCouponCode" role="button">Copy Code</div></a>
+                    <div><a href="#" target="_blank">Continue to offer <i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
+                </div>
+            </div>
         </div>
         <script>
             window.onload = loadCoupon(),
