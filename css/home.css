@@ -2,6 +2,15 @@
     margin:0;
     font-family: Times;
 }
+.font-black{
+    color: black;
+}
+.font-lightBlack{
+    color:#2e2f31;
+}
+.font-white{
+    color: white;
+}
 header{
     height: 72px;
     font-family:sans-serif;
@@ -30,7 +39,6 @@ header{
 }
 #catgries a{
     text-decoration: none;
-    color:black;
 }
 #catgries a:hover{
     color:#a435f0;
@@ -68,7 +76,6 @@ header{
 }
 #UBness a{
     text-decoration: none;
-    color:black;
 }
 #UBness a:hover{
     color:#a435f0;
@@ -78,7 +85,6 @@ header{
 }
 #tudemy a{
     text-decoration: none;
-    color:black;
 }
 #tudemy a:hover{
     color:#a435f0;
@@ -100,7 +106,6 @@ header{
 }
 .login a{
     text-decoration: none;
-    color:black
 }
 .login a:hover{
     text-decoration: none;
@@ -136,6 +141,25 @@ header{
 .dark a:hover{
     color:white;
     text-decoration: none;
+}
+button .pos-left{
+    width: 0;
+    left: 0;;
+    top: 4%;
+    position: absolute;
+}
+button .pos-right{
+    width:0;
+    right: 0;
+    top: 4%;
+    position: absolute;
+}
+.circle-button{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:black;
+    padding: 4px 4px;
 }
 .prm{
     position:relative;
@@ -197,7 +221,6 @@ header{
     list-style: none;
 }
 .course-category ul li a{
-    color:#2e2f31;
     text-decoration: none;
 }
 .course-category ul li a:hover{
@@ -298,9 +321,11 @@ header{
     padding:5px;
 }
 .div-caption h1{
-    color: #1c1d1f;
     font-size:17px;
     font-weight: bold;
+}
+h1{
+    color: #1c1d1f;
 }
 .course-chrg{
     color: #1c1d1f;
@@ -370,10 +395,9 @@ header{
     height:8%;
     font-size: 18px;
     font-weight: bold;
-    color:#1c1d1f;
     margin-top: 2%;
 }
-#diffCourses{
+.diffCourses{
     display: block;
     padding: 65px 12%;
     background: #f7f9fa;
@@ -431,7 +455,6 @@ header{
 }
 .caption-instr h1{
     font-weight: bold;
-    color:#1c1d1f;
     font-size: 35px;
 }
 .caption-instr button{
@@ -446,7 +469,7 @@ header{
 .bold-font{
     font-weight: bold;
 }
-#important-ads{
+.important-ads{
     display:block;
     text-align:center;
     padding: 20px 0;
@@ -458,7 +481,7 @@ footer{
     background: #1c1d1f;
     font-family:sans-serif;
     font-size:12px;
-    margin:0 -11%;
+    margin:0 0%;
 }
 .bottom1
 {
@@ -480,7 +503,6 @@ footer{
 }
 .attr ul li a{
     text-decoration:none;
-    color:white;
     font-size:15px;
     font-family: calibri;
 }
@@ -557,13 +579,13 @@ footer{
     box-shadow: 0px 3px 10px #ddd;
     
 }
+.borderColor{
+    border: 1px solid white;
+}
 .fontWhite{
     color: white;
-    background: rgb(58, 57, 57);
 }
-.fontBlack{
-    color: black;
-}
+
 .card{
     position: relative;
     border: 1px solid black;

@@ -33,7 +33,7 @@
                             <img src="images/logo-udemy.svg" alt="Udemy logo"/>
                         </a>                    
                     </div>
-                    <div id="catgries"><a href="#">Categories</a></div>
+                    <div id="catgries"><a href="#" class="font-black">Categories</a></div>
                     <div id="searchbox">
                         <div id="searchlogo">
                             <div>
@@ -42,8 +42,8 @@
                         </div>
                         <div id="search"><input type="text" name="Search" placeholder="Search for anything" /></div>
                     </div>
-                    <div id="UBness"><a href="#">Udemy Business</a></div>
-                    <div id="tudemy"><a href="#">Teach on Udemy</a></div>
+                    <div id="UBness"><a href="#" class="font-black">Udemy Business</a></div>
+                    <div id="tudemy"><a href="#" class="font-black">Teach on Udemy</a></div>
                     <div id="cart">
                         <a href="#">
                             <div>
@@ -53,13 +53,13 @@
                     </div>
                     <div id="day-night">
                         <button onClick="changeTheme()">                            
-                                 <img src="images/brightness.png" alt="light-icon"  class="theme-img" />
+                                 <img src="images/night-mode.png" alt="light-icon"  class="theme-img" />
                         </button>
                     </div>            
-                
+                   
                     <div id="account">
-                        <div class="std-width login"><a href="#"><span>Log in</span></a></div>
-                        <div class="dark std-width"><a href="#">Sign up</a></div>
+                        <div class="std-width login"><a href="#" class="font-black"><span>Log in</span></a></div>
+                        <div class="dark std-width"><a href="#" class="font-white">Sign up</a></div>
                         <div id="browser">
                             <a href="#">
                                 <div>
@@ -78,7 +78,7 @@
                                 <img src="images/frontimg.png" class="d-block w-100" alt="one"/>
                                 <div class="promoText">
                                     <h1>Our biggest sale of the season</h1>
-                                    <h4>Stock up on courses from ₹389. From coding to leadership to photography, you can learn almost anything. Ends Aug. 31.</h4>
+                                    <h4>Stock up on courses from ₹389. From coding to leadership to photography, you can learn almost anything. Ends Nov. 31.</h4>
                                 </div>
                             </div>
                             <div class="carousel-item">
@@ -88,7 +88,7 @@
                                     <h4>Skills for your present (and your future). Get started with us.</h4>
                                 </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
@@ -96,8 +96,18 @@
                                 <span class=".dot"></span>
                                 <span class="carousel-control-next-icon arrow-clr" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
+                            </button> -->
+                            <button type="button" class="carousel-control-prev" data-bs-target="#carouselExampleControls" data-bs-slide="prev" style="width: 0; left: 2%; top: 4%; position: absolute; z-index: 100;">
+                                <div class="circle-button">
+                                    <span class="carousel-control-prev-icon " ></span>
+                                </div>
                             </button>
-                            </div>   
+                            <button type="button" class="carousel-control-next" data-bs-target="#carouselExampleControls" data-bs-slide="next" style="width: 0; right: 2%; top: 4%; position: absolute; z-index: 100;">
+                                <div class="circle-button">
+                                    <span class="carousel-control-next-icon " ></span>
+                                </div>
+                            </button>
+                        </div>   
                     </div>
                 </div>
             
@@ -111,13 +121,13 @@
                     <div class="course-body">
                         <div class="course-category">
                             <ul>
-                                <li><a href="#" target="_blank"><h4>Python</h4></a></li>
-                                <li><a href="#" target="_blank"><h4>Excel</h4></a></li>
-                                <li><a href="#" target="_blank"><h4>Web Development</h4></a></li>
-                                <li><a href="#" target="_blank"><h4>JavaScript</h4></a></li>
-                                <li><a href="#" target="_blank"><h4>Data Science</h4></a></li>
-                                <li><a href="#" target="_blank"><h4>AWS Certification</h4></a></li>
-                                <li><a href="#" target="_blank"><h4>Drawing</h4></a></li>
+                                <li><a href="#" target="_blank" class="font-lightBlack"><h4>Python</h4></a></li>
+                                <li><a href="#" target="_blank" class="font-lightBlack"><h4>Excel</h4></a></li>
+                                <li><a href="#" target="_blank" class="font-lightBlack"><h4>Web Development</h4></a></li>
+                                <li><a href="#" target="_blank" class="font-lightBlack"><h4>JavaScript</h4></a></li>
+                                <li><a href="#" target="_blank" class="font-lightBlack"><h4>Data Science</h4></a></li>
+                                <li><a href="#" target="_blank" class="font-lightBlack"><h4>AWS Certification</h4></a></li>
+                                <li><a href="#" target="_blank" class="font-lightBlack"><h4>Drawing</h4></a></li>
                             </ul>
                             <div class="course-content">
                                 <div class="content-heading">
@@ -579,6 +589,8 @@
                                     <span class="course-chrg">&#8377;3,399</span>
                                 </div>
                             </div>
+                        </div>
+                    </div>
                 </div>
                 <div id="popularCategory">
                     <h1 class="category-heading">Top categories</h1>
@@ -618,7 +630,7 @@
                     </div>
                     
                 </div>
-                <div id="diffCourses">
+                <div class="diffCourses">
                     <div class="course-find">
                         <h1 class="category-heading">Featured topics by category</h1>
                     </div>
@@ -703,7 +715,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="important-ads">
+                    <div class="important-ads">
                         <h1 class="strong-font">Trusted by companies of all sizes</h1>
                         <img src="images/nasdaq-dark.svg" alt="Nasdaq company" />
                         <img src="images/nasdaq-dark.svg" alt="Nasdaq company" />
@@ -755,29 +767,29 @@
                 <div class="bottom1">
                     <div class="attr left">
                         <ul>
-                            <li><a href="#">Udemy Business</a></li>
-                            <li><a href="#">Teach on Udemy</a></li>
-                            <li><a href="#">Get the app</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#" class="font-white">Udemy Business</a></li>
+                            <li><a href="#" class="font-white">Teach on Udemy</a></li>
+                            <li><a href="#" class="font-white">Get the app</a></li>
+                            <li><a href="#" class="font-white">About</a></li>
+                            <li><a href="#" class="font-white">Contact us</a></li>
                         </ul>
                     </div>
                     <div class="attr left">
                         <ul>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Help and Support</a></li>
-                            <li><a href="#">Affiliate</a></li>
-                            <li><a href="#">Investors</a></li>
+                            <li><a href="#" class="font-white">Careers</a></li>
+                            <li><a href="#" class="font-white">Blog</a></li>
+                            <li><a href="#" class="font-white">Help and Support</a></li>
+                            <li><a href="#" class="font-white">Affiliate</a></li>
+                            <li><a href="#" class="font-white">Investors</a></li>
                         </ul>
                     </div>
                     <div class="attr left">
                         <ul>
-                            <li><a href="#">Terms</a></li>
-                            <li><a href="#">Privacy policy</a></li>
-                            <li><a href="#">Cookie settings</a></li>
-                            <li><a href="#">Sitemap</a></li>
-                            <li><a href="#">Accessibility statement</a></li>
+                            <li><a href="#" class="font-white">Terms</a></li>
+                            <li><a href="#" class="font-white">Privacy policy</a></li>
+                            <li><a href="#" class="font-white">Cookie settings</a></li>
+                            <li><a href="#" class="font-white">Sitemap</a></li>
+                            <li><a href="#" class="font-white">Accessibility statement</a></li>
                         </ul>
                     </div>
                     <div class="right-bordered">
