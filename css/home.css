@@ -624,7 +624,24 @@ button.closeCoupon{
     background-color:#00aad1;
     color: white;
 }
-
-
-
+#current_loc{
+    position: absolute;
+    width: 100px;
+    height: 378px;
+    top: 26%;
+    right: 0%;
+    padding: 20px 5px;
+    text-align: center;
+}
+.tail{
+    padding: 15px 0;
+    background: white;
+    color: black;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+.darkTheme{
+    background: rgb(58, 57, 57);
+    color: white;
+}
 

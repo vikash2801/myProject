@@ -23,6 +23,7 @@ function changeTheme(){
     let myDiffCourse = document.getElementsByClassName('diffCourses');
     let myImpAds = document.getElementsByClassName('important-ads');
     let myCaption = document.getElementsByClassName('div-caption');
+    let myTemp = document.getElementsByClassName('tail');
 
     /* font color toggle */
     let a = document.querySelectorAll('a');
@@ -42,15 +43,23 @@ Array.from(myCaption).forEach( (item)=>{
 
 
     myBody.classList.toggle('darkTheme');
+
     myHeader[0].classList.toggle('whiteBoxShadow');
+
     myPromo[0].classList.toggle('darkTheme');
     myPromo[1].classList.toggle('darkTheme');
+
     /* myADText[1].classList.toggle('font-black'); */
+
     myCourseBrdr[0].classList.toggle('borderColor');
+
     myDiffCourse[0].classList.toggle('darkTheme');
     myDiffCourse[0].classList.toggle('whiteBoxShadow');
+
     myImpAds[0].classList.toggle('darkTheme');
     myImpAds[0].classList.toggle('whiteBoxShadow');
+    
+    myTemp[0].classList.toggle('darkTheme');
 
 
     /* to change light-dark button */
@@ -63,7 +72,46 @@ Array.from(myCaption).forEach( (item)=>{
     }
 
     document.querySelector('#day-night').getElementsByTagName('img')[0].src = pic;
+
+}
+
+function getMyLocation(){
+    let myButton = document.getElementsByClassName('myLocation')[0];
+    let loc = document.getElementsByClassName('myLoc')[0];
+    let locTemp = document.getElementsByClassName('myLocTemp')[0];
+
     
+    if(navigator.geolocation){
+        myButton.style.display = 'none';
+        navigator.geolocation.getCurrentPosition(showLocation);
+    }
+    else{
+        loc.innerText  = 'Geo not supported'
+    }
 
+    function showLocation(data){
+        
+                console.log(data)
+                let lat = data.coords.latitude;
+                let long = data.coords.longitude;
+                
+                const abc = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${lat}&lon=${long}&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29`
+                //api calling
+                fetch(abc, {method: 'GET'})
+                // return promise
+                .then((res) => res.json())
+                // resolve promise
+                .then((data) => {
+                    console.log(data)
+                    let cityName = data.city.name;
+                    let temp = data.list[0].temp.day;
 
+                    loc.innerText = `${cityName}`
+                    locTemp.innerText = `${temp} °C`
+                })
+                .catch((err) => {
+                    console.log(err)
+                })
+
+    }
 }
