@@ -24,6 +24,7 @@ function changeTheme(){
     let myImpAds = document.getElementsByClassName('important-ads');
     let myCaption = document.getElementsByClassName('div-caption');
     let myTemp = document.getElementsByClassName('tail');
+    let myGeo = document.getElementById('current_loc');
 
     /* font color toggle */
     let a = document.querySelectorAll('a');
@@ -60,6 +61,7 @@ Array.from(myCaption).forEach( (item)=>{
     myImpAds[0].classList.toggle('whiteBoxShadow');
     
     myTemp[0].classList.toggle('darkTheme');
+    myTemp[0].classList.toggle('borderColor');
 
 
     /* to change light-dark button */
