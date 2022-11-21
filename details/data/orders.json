@@ -1,0 +1,67 @@
+[
+    {
+        "_id": "62514d42f5aec503b2e0f2a9",
+        "name": "Aakash",
+        "email": "aakash@gmail.com",
+        "address": "Hno 23,Sector 1",
+        "phone": 768768686,
+        "courseItem": [
+            3,
+            5,
+            7
+        ],
+        "status": "Pending"
+    },
+    {
+        "_id": "62514d69f5aec503b2e0f2aa",
+        "name": "Anchal",
+        "email": "anchal@gmail.com",
+        "address": "Hno 23,Sector 1",
+        "phone": 768768686,
+        "courseItem": [
+            6,
+            4,
+            3
+        ],
+        "status": "Pending"
+    },
+    {
+        "_id": "62514d77f5aec503b2e0f2ab",
+        "name": "Anchal",
+        "email": "anchal@gmail.com",
+        "address": "Hno 23,Sector 1",
+        "phone": 768768686,
+        "courseItem": [
+            2,
+            5,
+            1
+        ],
+        "status": "Pending"
+    },
+    {
+        "_id": "62514d8bf5aec503b2e0f2ac",
+        "name": "Aakash",
+        "email": "aakash@gmail.com",
+        "address": "Hno 23,Sector 1",
+        "phone": 97876733,
+        "courseItem": [
+            4,
+            2,
+            1
+        ],
+        "status": "Pending"
+    },
+    {
+        "_id": "62514d8bf5aec503b2e0f3af",
+        "name": "vikash",
+        "email": "vikash@gmail.com",
+        "address": "Magadh road,Sector 3,Jhansi",
+        "phone": 97875732,
+        "courseItem": [
+            1,
+            3,
+            7
+        ],
+        "status": "Pending"
+    }
+]

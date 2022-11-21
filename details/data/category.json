@@ -1,0 +1,86 @@
+[
+    {
+        "category_id": "dev",
+        "category": "Development",
+        "subcategories":[
+            {
+                "subcategory_id": "dev1",
+                "subcategory": "Web Development",
+                "topics":[
+                    "JavaScript", "React JS" , "CSS" , "Angular" , "NodeJs" , "Typescript" , "HTML5" , "Django"
+                ]
+            },
+            {
+                "subcategory_id": "dev2",
+                "subcategory": "Data Science",
+                "topics":[
+                    
+                ]
+            },
+            {
+                "subcategory_id": "dev3",
+                "subcategory": "Mobile Development",
+                "topics":[
+                    
+                ]
+            }
+        ]
+    },
+    {
+        "category_id": "des",
+        "category": "Design",
+        "subcategories":[
+            {
+                "subcategory_id": "des2",
+                "subcategory": "Graphic Design & Illustration",
+                "topics":[
+                    "Graphic Design", "Photoshop", "Adobe Illustrator", "Drawing", "Canva"
+                ]
+            }
+        ]
+    },
+    {
+        "category_id": "bus",
+        "category": "Business",
+        "subcategories":[
+            {
+                "subcategory_id": "bus1",
+                "subcategory": "Enterpreneurship",
+                "topics":[
+                    "Business Fundamentals", "Startup", "Freelancing", "Blogging"
+                ]
+            },
+            {
+                "subcategory_id": "bus2",
+                "subcategory": "Communication",
+                "topics":[
+                ]
+            },
+            {
+                "subcategory_id": "bus3",
+                "subcategory": "Sales",
+                "topics":[
+                    
+                ]
+            },
+            {
+                "subcategory_id": "bus4",
+                "subcategory": "Management",
+                "topics":[
+                    
+                ]
+            },
+            {
+                "subcategory_id": "bus5",
+                "subcategory": "Other Business",
+                "topics":[
+                    "Grant Writing",
+                    "QuickBooks Online",
+                    "Transcription",
+                    "Data Entry Skills"
+                    
+                ]
+            }
+        ]
+    }
+]
