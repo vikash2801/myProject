@@ -1,27 +1,38 @@
 #Page1
->List of courses wrt courseId (GET)
-http://localhost:9800/courseDetail/{{course_id}}
+>List of courses (GET)
+http://localhost:9000/courseDetail
 
 >list of courses wrt course type (GET)
-http://localhost:9800/courseDetail/filter/courseType/{{courseType}}
+http://localhost:9000/courseDetail/courseType/{{courseType}}
+e.g
+    courseType = Java, python, etc..
 
->list of courses wrt course category
+>list of courses wrt rating
+http://localhost:9000/courseDetail/rating/{{rating}}
+e.g
+    rating = 4, 3.5, etc..
 
 #Page2
->list courseType wrt courseCategory
+>list course wrt courseCategory
+http://localhost:9000/filter/{{courseCategory}}
+e.g
+    courseCategory = Development, Marketing, etc..
 
 >filter course wrt courseType
+http://localhost:9000/filter/{{courseCategory}}?courseType=Java
 
->filter course wrt duration
+>filter course wrt cost
+http://localhost:9000/filter/{{courseCategory}}?lcost=700&hcost=1500
 
 >filter course wrt language
+http://localhost:9000/filter/{{courseCategory}}?lang=English
 
->sort (ascending)
-
+>sort the course from high cost to low cost(descending)
+http://localhost:9000/filter/{{courseCategory}}?lcost=700&hcost=1500&sort=-1
 
 #Page3
 >placeOrder call (POST)
-http://localhost:9800/placeOrder
+http://localhost:9000/placeOrder
 //Body
 {
     "name":"Mehak",
@@ -34,7 +45,9 @@ http://localhost:9800/placeOrder
 
 #Page4
 >List of Orders (GET)
-http://localhost:9800/orders
+http://localhost:9000/orders
 
 >list of orders wrt email (GET)
-http://localhost:9800/orders?email=mhanda124@gmail.com
+http://localhost:9000/orders?email=mhanda124@gmail.com
+
+
