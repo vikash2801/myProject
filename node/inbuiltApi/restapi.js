@@ -5,8 +5,8 @@ dotEnv.config();
 let port = process.env.PORT || 3400;
 let mongo = require('mongodb')
 let mongoClient = mongo.MongoClient;
-//let mongoUrl = process.env.LiveMongo;
-let mongoUrl = process.env.MongoURL;
+let mongoUrl = process.env.LiveMongo;
+//let mongoUrl = process.env.MongoURL;
 let db;
 
 let bodyParser = require('body-parser');
@@ -18,7 +18,10 @@ let cors = require('cors')
 app.use(cors())
 
 /* --------------------------------------------------------endpoints------------------------------------------------------------- */
-
+//starting endpoint
+app.get('/',(req,res)=>{
+     res.send("Welcome on Express");
+})
 
 //list of courses
 app.get('/courseDetail',(req,res)=>{
@@ -37,7 +40,7 @@ app.get('/courseDetail/courseType/:course',(req,res)=>{
     let query = {};
 
     if(course){
-        query = {course_topic: course}
+        query = {course_type: course}
     }
     //output the result
     db.collection('course').find(query).toArray((err, result)=>{
@@ -79,7 +82,7 @@ app.get('/filter/:courseCategory',(req,res) => {
     if(hcost && lcost && courseType){
         query={
             "course_category":courseCategory,
-            "course_topic":courseType,
+            "course_type":courseType,
             $and:[{"course_details.cost":{$gt:lcost,$lt:hcost}}]
         }
     } 
@@ -92,7 +95,7 @@ app.get('/filter/:courseCategory',(req,res) => {
     else if(courseType){
         query={
             "course_category":courseCategory,
-            "course_topic":courseType
+            "course_type":courseType
         }
     }else if(lang){
         query={
