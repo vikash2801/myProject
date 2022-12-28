@@ -68,9 +68,9 @@ Array.from(myCaption).forEach( (item)=>{
     let isDark = document.getElementsByClassName('darkTheme');
     let pic;
     if(isDark.length != 0 ){
-        pic = "images/brightness.png";
+        pic = "https://ibb.co/bdRBnqc";
     }else{
-        pic = "images/night-mode.png";
+        pic = "https://ibb.co/mSLFPSG";
     }
 
     document.querySelector('#day-night').getElementsByTagName('img')[0].src = pic;

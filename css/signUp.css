@@ -222,6 +222,15 @@ button .pos-right{
     color:#a435f0;
     font-weight: bold;
 }
+.has-error{
+    border-color: red;
+}
+.has-success{
+    border-color: green;
+}
+#fout, #eout, #pout{
+    color: red;
+}
 
 
 /* footer css */

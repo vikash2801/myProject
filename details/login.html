@@ -2,6 +2,7 @@
     <head>
         <title>Udemy</title>
         <link href="../css/login.css" rel="stylesheet"/>
+        <script src="../javascript/login.js"></script>
         <!-- link for Font Awesome cdn-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -90,8 +91,9 @@
                     <form>
                         <div class="form-input">
                             <div class="icons"><i class="fa fa-envelope" aria-hidden="true"></i></div>
-                            <input type="email" name="email" placeholder="Email" value=""/>
+                            <input type="email" id="email" name="email" placeholder="Email" value="" onblur="validateEmail()"/>
                         </div>
+                        <p id="eout"></p>
                         <div class="form-input">
                             <div class="icons"><i class="fa fa-unlock-alt" aria-hidden="true"></i></div>
                             <input type="password" name="password" placeholder="Password" value=""/>

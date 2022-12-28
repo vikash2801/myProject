@@ -3,14 +3,14 @@
         <title>Udemy</title>
         <link href="../css/signUp.css" rel="stylesheet"/>
         <!-- link for Font Awesome cdn-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"/>
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+ -->
         <!-- link for BootStrap3-->
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        -->
+       
 
         <!-- link for Owl carousel -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -20,8 +20,11 @@
         
         
         <!-- link for BootStrap5-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+         -->
+        <script src="../javascript/signup.js"></script>
+    
     </head>
     <body>
         <div id="Udemy_body">
@@ -68,19 +71,25 @@
             <div class="signUp-Body">
                 <div class="signUp-label">Sign up and start learning</div>
                 <div class="signUp-inputs">
-                    <div class="inputs">
+                    <div class="inputs" id="fdiv">
                         <p class="added_placeholder"></p>
-                        <input type="text" name="fullName" placeholder="Full name" value=""/>
+                        <input type="text" id="fname" name="fullName" placeholder="Full name" value="" onblur="validateFname()" required/>
                     </div>
+                    <p id="fout"></p>
+
                     <div class="inputs">
                         <p class="added_placeholder"></p>
-                        <input type="email" name="email" placeholder="Email" value=""/>
+                        <input type="email" id="email" name="email" placeholder="Email" value="" oninput="validateEmail()" required/>
                     </div>
-                    <div class="inputs">
+                    <p id="eout"></p>
+
+                    <div class="inputs" id="ppout">
                         <p class="added_placeholder"></p>
-                        <input type="password" name="password" placeholder="Password" value=""/>
+                        <input type="password" id="pwd" name="password" placeholder="Password" value="" oninput="validatePass()" required/>
                         <p class="validation_level"></p>
                     </div>
+                    <p id="pout"></p>
+
                     <div class="special_offers">
                         <div class="Box"><input type="checkbox"></div><div class="checktxt">Send me special offers, personalized recommendations, and learning tips.</div>
                     </div>

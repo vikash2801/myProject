@@ -142,7 +142,7 @@ header{
     color:white;
     text-decoration: none;
 }
-button .pos-left{
+/* button .pos-left{
     width: 0;
     left: 0;;
     top: 4%;
@@ -153,107 +153,87 @@ button .pos-right{
     right: 0;
     top: 4%;
     position: absolute;
-}
+} */
 
 /*  body css */
-.login-Body{
-    width: 22%;
-    margin: 45px 39%;
-}
-.login-label{
-    color:#1c1d1f;
-    font-weight: bold;
-    font-size: 16px;
-    margin-bottom: 0.5em;
-}
-.inputs{
-    height: 40px;
-    margin-bottom: 10px;
-    font-size: 16px;    
-    border: 1px solid #d1d7dc;
-    box-shadow: 0 2px 2px 0px rgb(28 29 31 / 41%);    
-}
-.inputs input{
-    width: 88%;
-    padding: 7px 0px;
-    border: none;
-    outline: none;
-}
-.inputs a{
+.body-content-head{
+    height:block;
+    font-family:sans-serif;
+    margin:0 0%;
+    padding: 20px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 40px;
+}
+.body-content-head{
+    margin: 20px 3%;
+}
+.filterSection{
+    width:25%;
+    margin-right: 4%;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+.course-container{
+    width:65%;
+}
+.div-img{
+    height: 50%;
+}
+.card img{
+    height: 100%;
     width: 100%;
-    text-decoration: none;
-    color: black;
+}
+.img-tag{
+    display: block;
+    color: #6a6f73;
+    font-size: 14px;
+}
+.course-rating{
+    display: flex;
+    align-items: center;
+}
+.course-rating > div{
+    margin-right:2px;
+}
+.rating-no{
+    font-weight: bold;
+    color:#b4690e;
+}
+.star{
+    font-size:115%;
+    color: #b4690e;
+}
+.half-star{
+    font-size:90%;
+    color:#b4690e;
+}
+.course-reviews{
+    color: #6a6f73;
+    font-size: 14px;
+    margin-left: 2px;
+}
+.course-chrg{
+    font-weight: bold;
+    color:#1c1d1f;
+}
+.div-caption{
+    height:50%;
+    padding:5px;
+}
+.div-caption h1{
+    font-size:17px;
     font-weight: bold;
 }
-.inputs a:hover{
-    background: #f8f8fd;
+h1{
+    color: #1c1d1f;
 }
-.link-image{
-    width: 22px;
-    height: 22px;
-    margin: 0 3% 0 2%;
+.course-chrg{
+    color: #1c1d1f;
+    font-size:16px;
+    font-weight: bold; 
 }
-.form-input{
-    height: 40px;
-    margin-bottom: 10px;
-    font-size: 16px;    
-    border: 1px solid black;
-    font-family: Tahoma;
-    color:#2e2f31;
-}
-.form-input input{
-    width: 88%;
-    padding: 7px 0px;
-    border: none;
-    outline: none;
-}
-.icons{
-    display: inline;
-    margin: 0 2%;
-}
-.fa-envelope{
-    color: rgb(28 29 31 / 41%);
-    width: 6%;
-}
-.fa-unlock-alt{
-    color: rgb(28 29 31 / 41%);
-    width: 6%;
-}
-.loginHere{
-    background: #a435f0;
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
-    padding: 8px 41.9%;
-    border: none;
-    margin-bottom: 0.8em;
-    font-family: sans-serif;
-}
-.log-pass{
-    text-align: center;
-}
-.log-pass a, .log-pass a:hover{
-    text-decoration: none;
-    color:#a435f0;
-}
-.need-signUp{
-    text-align: center;
-}
-.need-signUp p{
-    margin:0;
-}
-.need-signUp p a, .need-signUp p a:hover{
-    color:#a435f0;
-    font-weight: bold;
-}
-#eout{
-    color: red;
-    font-size: 13px;
-}
+
+
+
 
 /* footer css */
 footer{

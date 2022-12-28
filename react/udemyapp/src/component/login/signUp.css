@@ -1,0 +1,76 @@
+/*  body css */
+.signUp-Body{
+    width: 27%;
+    margin: 45px 38%;
+}
+.signUp-label{
+    color:#1c1d1f;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 0.5em;
+}
+.inputs{
+    width: 95%;
+    height: 50px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid black;    
+}
+.inputs input{
+    width: 100%;
+    padding: 2px 8px;
+    border: none;
+    outline: none;
+}
+.special_offers{
+    display: flex;
+    margin-bottom: 0.5em;
+    width: 70%;
+    padding-top: 2px;
+}
+.Box{
+    flex-grow: 0;
+}
+.checktxt{
+    flex-grow: 2;
+    font-size: 13px;
+    margin-left: 5px;
+    margin-top: -5px;
+    font-family: sans-serif;
+}
+.signUp{
+    background: #a435f0;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    padding: 8px 40%;
+    border: none;
+    margin-bottom: 0.8em;
+    font-family: sans-serif;
+}
+.terms-conditions{
+    font-size: 13.5px;
+    font-family: sans-serif;
+}
+.terms-conditions a, .terms-conditions a:hover{
+    color: inherit;
+}
+
+.having_account{
+    text-align: center;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+.having_account a, .having_account a:hover{
+    color:#a435f0;
+    font-weight: bold;
+}
+.has-error{
+    border-color: red;
+}
+.has-success{
+    border-color: green;
+}
+#fout, #eout, #pout{
+    color: red;
+}
