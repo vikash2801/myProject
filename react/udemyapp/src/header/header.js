@@ -46,7 +46,6 @@ class Header extends Component{
                                  <img src="https://i.ibb.co/6N3JqNm/night-mode.png" alt="light-icon"  className="theme-img" />
                         </button>
                     </div>            
-                   
                     <div id="account">
                         <div className="std-width login"><Link to="/login" className="font-black"><span>Log in</span></Link></div>
                         <div className="dark std-width"><Link to="/register" className="font-white">Sign up</Link></div>

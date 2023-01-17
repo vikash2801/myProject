@@ -1,7 +1,6 @@
 import React,{Component} from 'react'
 import axios from 'axios'
 
-const lurl= "https://udemyapi.onrender.com/filter/Development"
 
 class ListDisplay extends Component{
     constructor(){

@@ -1,7 +1,6 @@
 import React,{Component} from 'react'
 import CostFilter from '../filter/costFilter'
 import RateFilter from '../filter/rateFilter'
-import TopicFilter from '../filter/topicFilter'
 import './listing.css'
 
 class Filter extends Component{

@@ -3,23 +3,6 @@ import {Link} from 'react-router-dom'
 import './home.css'
 
 
-const Home = () =>{
-
-    const carouselButtonLeft ={
-         width: "0",
-         left: "2%",
-         top: "4%",
-         position: "absolute",
-         zindex: "100"
-    }
-
-    const carouselButtonRight = {
-        width: "0",
-        right: "2%",
-        top: "4%",
-        position: "absolute",
-        zindex: "100"
-    }
 
     return(
         <>
@@ -367,8 +350,6 @@ const Home = () =>{
                                             <span  className="star">&starf;</span>
                                             <span><i className="fa fa-star-half-full half-star"></i></span>
                                         </div>
-                                        <div>
-                                            <span className="course-reviews">(213,276)</span>
                                         </div>
                                     </div>
                                     <span className="course-chrg">&#8377;389 <delete>&#8377;3,499</delete></span>
@@ -725,7 +706,6 @@ const Home = () =>{
                     </div>
                 </div>
             </div>    
-
 
         </>
     )
