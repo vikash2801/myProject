@@ -5,6 +5,7 @@
     margin:0 0%;
     padding: 20px;
     display: flex;
+    background-color: none;
 }
 .body-content-head{
     margin: 20px 3%;

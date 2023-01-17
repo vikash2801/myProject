@@ -1,0 +1,47 @@
+.body-content2-head{
+    height:block;
+    background: #1c1d1f;
+    color: white;
+    font-family:sans-serif;
+    margin:0 0%;
+    padding: 20px;
+    border-bottom: 5px solid gray;
+}
+.body-content2-head .container{
+    padding: 0 30% 0 0;
+}
+.head-links a, .head-links a:hover{
+    text-decoration: none;    
+    color: #cec0fc;
+}
+.head-title h1{
+    font-weight: bold;
+    font-size: 2.5em;
+    color: white;
+}
+.head-subtitle{
+    font-size: 1.3em;
+    margin-bottom: 0.4em;
+}
+.head-review{
+    display: flex;
+    margin-bottom: 0.4em;
+}
+.badge{
+    padding: 3px;
+    background: #dad98d;
+    color: #6d3b0a;
+    margin: 0 5px 0 0;
+}
+.course-review{
+    margin: 0 5px 0 0;
+}
+.author a, .author a:hover{
+    color: #cec0fc;
+}
+.itemCost{
+    font-weight: bold;
+}
+.row{
+    padding-top: 10px;
+}

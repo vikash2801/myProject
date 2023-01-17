@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import axios from 'axios';
 import {Link} from 'react-router-dom'
 
-const url = "https://udemyapi.onrender.com/courseDetail"
+const url = "http://localhost:9000/courseDetail"
 
 class Category extends Component{
     constructor(){
@@ -18,7 +18,7 @@ class Category extends Component{
             return this.state.courseData.map((item)=>{
                 return(
                     <>
-                        &nbsp; <Link to="/listing" class="catDiv">{item}</Link>                       
+                        &nbsp; <Link to={`/listing/${item}`} class="catDiv">{item}</Link>                       
                     </>
                 )
             })

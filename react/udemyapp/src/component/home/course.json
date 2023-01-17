@@ -1,0 +1,421 @@
+[
+    {
+      "_id": "63bdb344d95ff71173a4e00c",
+      "course_category": "Development",
+      "course_cat": "dev",
+      "course_subcategory": "Programming languages",
+      "course_type": "Python",
+      "course_name": "100 Days of Code",
+      "course_details": {
+        "cost": 649,
+        "original_cost": 1099,
+        "tutor": "Jose Portilla",
+        "rating": 4.3,
+        "reviewCount": "18,938",
+        "tag": "Bestseller",
+        "level": "Beginner",
+        "language": "English",
+        "duration": "15 hrs"
+      },
+      "course_img": "https://i.ibb.co/PWpVDXp/1.jpg",
+      "typeId": 1
+    },
+    {
+      "_id": "63bdb344d95ff71173a4e00d",
+      "course_category": "Development",
+      "course_cat": "dev",
+      "course_subcategory": "Programming languages",
+      "course_type": "Python",
+      "course_name": "30 Days of Code",
+      "course_details": {
+        "cost": 349,
+        "original_cost": 499,
+        "tutor": "Jose Portilla",
+        "rating": 4.1,
+        "reviewCount": "18,938",
+        "tag": "Bestseller",
+        "level": "Beginner",
+        "language": "English",
+        "duration": "5 hrs"
+      },
+      "course_img": "https://i.ibb.co/PWpVDXp/1.jpg",
+      "typeId": 1
+    },
+    {
+      "_id": "63bdb344d95ff71173a4e00e",
+      "course_category": "Development",
+      "course_cat": "dev",
+      "course_subcategory": "Programming languages",
+      "course_type": "Python",
+      "course_name": "100 Days of Code",
+      "course_details": {
+        "cost": 649,
+        "original_cost": 1099,
+        "tutor": "Jose Portilla",
+        "rating": 4.3,
+        "reviewCount": "18,938",
+        "tag": "Bestseller",
+        "level": "Beginner",
+        "language": "English",
+        "duration": "15 hrs"
+      },
+      "course_img": "https://i.ibb.co/PWpVDXp/1.jpg",
+      "typeId": 1
+    },
+    {
+      "_id": "63bdb344d95ff71173a4e00f",
+      "course_category": "Development",
+      "course_cat": "dev",
+      "course_subcategory": "Programming languages",
+      "course_type": "Python",
+      "course_name": "Advance Python",
+      "course_details": {
+        "cost": 849,
+        "original_cost": 1499,
+        "tutor": "Jose Portilla",
+        "rating": 3.3,
+        "reviewCount": "1,237",
+        "tag": "Bestseller",
+        "level": "Beginner",
+        "language": "English",
+        "duration": "11 hrs"
+      },
+      "course_img": "https://i.ibb.co/PWpVDXp/1.jpg",
+      "typeId": 1
+    },
+    {
+      "_id": "63bdb344d95ff71173a4e010",
+      "course_category": "Development",
+      "course_cat": "dev",
+      "course_subcategory": "Programming languages",
+      "course_type": "C#",
+      "course_name": "Learn C# programming (In ten easy steps)",
+      "course_details": {
+        "cost": 1499,
+        "original_cost": 3499,
+        "tutor": "Huw Collingborne",
+        "rating": 4.5,
+        "reviewCount": "1,711",
+        "tag": "Latest",
+        "level": "Beginner",
+        "language": "English",
+        "duration": "2 hrs"
+      },
+      "course_img": "https://i.ibb.co/RBgwpf9/2.jpg",
+      "typeId": 6
+    },
+    {
+      "_id": "63bdb344d95ff71173a4e011",
+      "course_category": "Development",
+      "course_cat": "dev",
+      "course_subcategory": "Mobile development",
+      "course_type": "Java",
+      "course_name": "The Complete Android S + Java Developer Course",
+      "course_details": {
+        "cost": 649,
+        "original_cost": 1499,
+        "tutor": "Morteja Kordi",
+        "rating": 4.2,
+        "reviewCount": "4,563",
+        "tag": "Latest",
+        "level": "Moderate",
+        "language": "English",
+        "duration": "12 hrs"
+      },
+      "course_img": "https://i.ibb.co/bdTLKVc/3.jpg",
+      "typeId": 3
+    },
+    {
+      "_id": "63bdb344d95ff71173a4e012",
+      "course_category": "Development",
+      "course_cat": "dev",
+      "course_subcategory": "Mobile development",
+      "course_type": "Java",
+      "course_name": "The Complete Android S + Java Developer Course",
+      "course_details": {
+        "cost": 649,
+        "original_cost": 3499,
+        "tutor": "Morteja Kordi",
+        "rating": 4.2,
+        "reviewCount": "4,563",
+        "tag": "Latest",
+        "level": "Moderate",
+        "language": "English",
+        "duration": "12 hrs"
+      },
+      "course_img": "https://i.ibb.co/bdTLKVc/3.jpg",
+      "typeId": 3
+    },
+    {
+      "_id": "63bdb344d95ff71173a4e013",
+      "course_category": "Development",
+      "course_cat": "dev",
+      "course_subcategory": "Mobile development",
+      "course_type": "Java",
+      "course_name": "Basic Java Course",
+      "course_details": {
+        "cost": 449,
+        "original_cost": 799,
+        "tutor": "Morteja Kordi",
+        "rating": 4.8,
+        "reviewCount": "4,563",
+        "tag": "Latest",
+        "level": "Beginner",
+        "language": "English",
+        "duration": "4 hrs"
+      },
+      "course_img": "https://i.ibb.co/bdTLKVc/3.jpg",
+      "typeId": 3
+    },
+    {
+      "_id": "63bdb344d95ff71173a4e014",
+      "course_category": "Development",
+      "course_cat": "dev",
+      "course_subcategory": "Mobile development",
+      "course_type": "Android",
+      "course_name": "Android Material Design",
+      "course_details": {
+        "cost": 1049,
+        "original_cost": 1599,
+        "tutor": "Anapurna Agarwal",
+        "rating": 2.7,
+        "reviewCount": "877",
+        "tag": "",
+        "level": "Advance",
+        "language": "Hindi",
+        "duration": "7 hrs"
+      },
+      "course_img": "https://i.ibb.co/Mh3Kg0y/4.jpg",
+      "typeId": 4
+    },
+    {
+      "_id": "63bdb344d95ff71173a4e015",
+      "course_category": "Development",
+      "course_cat": "dev",
+      "course_subcategory": "Mobile development",
+      "course_type": "Android",
+      "course_name": "Designing with logics",
+      "course_details": {
+        "cost": 549,
+        "original_cost": 899,
+        "tutor": "Anapurna Agarwal",
+        "rating": 3.7,
+        "reviewCount": "8,127",
+        "tag": "",
+        "level": "Advance",
+        "language": "Hindi",
+        "duration": "3 hrs"
+      },
+      "course_img": "https://i.ibb.co/Mh3Kg0y/4.jpg",
+      "typeId": 4
+    },
+    {
+      "_id": "63bdb344d95ff71173a4e016",
+      "course_category": "Development",
+      "course_cat": "dev",
+      "course_subcategory": "Mobile development",
+      "course_type": "Android",
+      "course_name": "Build Android Apps with App Inventor 2",
+      "course_details": {
+        "cost": 649,
+        "original_cost": 999,
+        "tutor": "Stone River",
+        "rating": 4.8,
+        "reviewCount": "326",
+        "tag": "Bestseller",
+        "level": "Beginner",
+        "language": "German",
+        "duration": "2.5 hrs"
+      },
+      "course_img": "https://i.ibb.co/yyXXp3Y/5.jpg",
+      "typeId": 4
+    },
+    {
+      "_id": "63bdb344d95ff71173a4e017",
+      "course_category": "Development",
+      "course_cat": "dev",
+      "course_subcategory": "Mobile development",
+      "course_type": "Android",
+      "course_name": "Build Android Apps with App Inventor 2",
+      "course_details": {
+        "cost": 649,
+        "original_cost": 999,
+        "tutor": "Stone River",
+        "rating": 4.8,
+        "reviewCount": "326",
+        "tag": "Bestseller",
+        "level": "Beginner",
+        "language": "English",
+        "duration": "2.5 hrs"
+      },
+      "course_img": "https://i.ibb.co/yyXXp3Y/5.jpg",
+      "typeId": 4
+    },
+    {
+      "_id": "63bdb344d95ff71173a4e018",
+      "course_category": "Development",
+      "course_cat": "dev",
+      "course_subcategory": "Game development",
+      "course_type": "C#",
+      "course_name": "Complete C# Unity Game Developer 2D",
+      "course_details": {
+        "cost": 649,
+        "original_cost": 3499,
+        "tutor": "Rick Davidson,Gary Pattie",
+        "rating": 4.7,
+        "reviewCount": "96,122",
+        "tag": "",
+        "level": "",
+        "language": "English"
+      },
+      "course_img": "https://i.ibb.co/wgXGM4z/6.jpg",
+      "typeId": 6
+    },
+    {
+      "_id": "63bdb344d95ff71173a4e019",
+      "course_category": "Marketing",
+      "course_cat": "mar",
+      "course_subcategory": "Marketing Fundamentals",
+      "course_type": "Seo",
+      "course_name": "SEO Training",
+      "course_details": {
+        "cost": 999,
+        "original_cost": 1499,
+        "tutor": "Eric Schwartzman",
+        "rating": 4.4,
+        "reviewCount": "9,122",
+        "tag": "",
+        "level": "Beginner",
+        "language": "English",
+        "duration": "5 hrs"
+      },
+      "course_img": "https://i.ibb.co/nb9f9js/7.jpg",
+      "typeId": 7
+    },
+    {
+      "_id": "63bdb344d95ff71173a4e01a",
+      "course_category": "Marketing",
+      "course_cat": "mar",
+      "course_subcategory": "Marketing Fundamentals",
+      "course_type": "Seo",
+      "course_name": "Advance marketting skillset",
+      "course_details": {
+        "cost": 199,
+        "original_cost": 599,
+        "tutor": "Eric Schwartzman",
+        "rating": 2.4,
+        "reviewCount": "1,122",
+        "tag": "",
+        "level": "Beginner",
+        "language": "English",
+        "duration": "2 hrs"
+      },
+      "course_img": "https://i.ibb.co/nb9f9js/7.jpg",
+      "typeId": 7
+    },
+    {
+      "_id": "63bdb344d95ff71173a4e01b",
+      "course_category": "Marketing",
+      "course_cat": "mar",
+      "course_subcategory": "Marketing Fundamentals",
+      "course_type": "LinkedIn",
+      "course_name": "LinkedIn Training Course",
+      "course_details": {
+        "cost": 699,
+        "original_cost": 799,
+        "tutor": "Eric Schwartzman",
+        "rating": 4.5,
+        "reviewCount": "1,142",
+        "tag": "",
+        "level": "Beginner",
+        "language": "English",
+        "duration": "3 hrs"
+      },
+      "course_img": "https://i.ibb.co/gT4NPMF/8.jpg",
+      "typeId": 8
+    },
+    {
+      "_id": "63bdb344d95ff71173a4e01c",
+      "course_category": "Development",
+      "course_cat": "dev",
+      "course_subcategory": "Programming languages",
+      "typeId": 1,
+      "course_type": "Python",
+      "course_name": "Python for Beginners - Learn Programming from scratch",
+      "course_details": {
+        "cost": 3099,
+        "original_cost": 3499,
+        "tutor": "Jose Portilla",
+        "rating": 4.6,
+        "reviewCount": "3,021",
+        "tag": "",
+        "level": "Beginner",
+        "language": "English",
+        "duration": "4 hrs"
+      },
+      "course_img": "https://i.ibb.co/PWpVDXp/1.jpg"
+    },
+    {
+      "_id": "63bdb344d95ff71173a4e01d",
+      "course_category": "Development",
+      "course_cat": "dev",
+      "course_subcategory": "Programming languages",
+      "typeId": 1,
+      "course_type": "Python",
+      "course_name": "2022 Complete Python Bootcamp From Zero to Hero in Python",
+      "course_details": {
+        "cost": 1049,
+        "original_cost": 3499,
+        "tutor": "Jose Portilla",
+        "rating": 3.8,
+        "reviewCount": "1,377",
+        "tag": "",
+        "level": "Advance",
+        "language": "Hindi",
+        "duration": "7 hrs"
+      },
+      "course_img": "https://i.ibb.co/PWpVDXp/1.jpg"
+    },
+    {
+      "_id": "63bdb344d95ff71173a4e01e",
+      "course_category": "Development",
+      "course_cat": "dev",
+      "course_subcategory": "Programming languages",
+      "typeId": 1,
+      "course_type": "Python",
+      "course_name": "Python for Data Science and Machine Learning Bootcamp",
+      "course_details": {
+        "cost": 1499,
+        "original_cost": 3499,
+        "tutor": "Manoj Mukhtar",
+        "rating": 3.8,
+        "reviewCount": "1,867",
+        "tag": "",
+        "level": "Advance",
+        "language": "Hindi",
+        "duration": "3 hrs"
+      },
+      "course_img": "https://i.ibb.co/PWpVDXp/1.jpg"
+    },
+    {
+      "_id": "63bdb344d95ff71173a4e01f",
+      "course_category": "Development",
+      "course_cat": "dev",
+      "course_subcategory": "Programming languages",
+      "typeId": 1,
+      "course_type": "Python",
+      "course_name": "Data Analyst",
+      "course_details": {
+        "cost": 1499,
+        "original_cost": 3499,
+        "tutor": "Manoj Mukhtar",
+        "rating": 3.2,
+        "reviewCount": "1,867",
+        "tag": "",
+        "level": "Advance",
+        "language": "English",
+        "duration": "3 hrs"
+      },
+      "course_img": "https://i.ibb.co/PWpVDXp/1.jpg"
+    }
+  ]

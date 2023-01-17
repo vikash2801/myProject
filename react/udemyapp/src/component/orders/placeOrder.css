@@ -1,0 +1,22 @@
+.orderItems{
+    float:left;
+    height:185px;
+    width:200px;
+    margin:2%;
+    box-shadow:10px 10px 20px gray
+}
+
+.orderItems>img{
+   height:130px;
+   width:100%
+}
+
+.orderItems > h3 {
+    font-size: 0.8rem;
+}
+
+.orderItems > h4 {
+    font-size: 0.9rem;
+    color: green;
+    font-weight: bold;
+}

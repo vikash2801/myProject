@@ -24,6 +24,7 @@ header{
     align-items:center;
     justify-content: space-around;
     margin: 0 14px;
+    width: 80%;
 }
 .flexDiv div{
     margin-top: 7px;
@@ -72,7 +73,7 @@ header{
     background: #f7f9fa;
 }
 #UBness{
-    width:10%;
+    width:11%;
 }
 #UBness a{
     text-decoration: none;
@@ -81,7 +82,7 @@ header{
     color:#a435f0;
 }
 #tudemy{
-    width:10%;
+    width:11%;
 }
 #tudemy a{
     text-decoration: none;
@@ -97,13 +98,14 @@ header{
 }
 .std-width{
     width: 55%;
-    height: 40px;
+    height: 38px;
     flex-grow: 2;
-    margin: 0 3px 7px 3px;
+    margin: 7px 3px;
     font-size: 15px;
     font-weight: bold;
     border: 1px solid black;
-    padding: 4px 0;
+    padding: 7px 0;
+    text-align: center;
 }
 .login a{
     text-decoration: none;
@@ -127,6 +129,7 @@ header{
 }
 #browser a div{
     margin-top: 3px;
+    text-align:center;
 }
 #browser a img{
     width:30px;
@@ -147,7 +150,15 @@ header{
     height: 20px;
     width: 20px;
 }
-.day-night button{
+#cart{
+    margin-top: 2px;
+}
+#day-night button{
     border: none;
-    outline: none;
+}
+#headerComponent{
+    display: flex;
+}   
+.logoutButton{
+    padding: 6px;
 }
