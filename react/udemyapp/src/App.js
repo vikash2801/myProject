@@ -31,7 +31,7 @@ class Routing extends Component{
                 <Route path="/register" component={Register} />
                 <Route path="/listing/:cat" component={List} />
                 <Route path="/details" component={Details} />                
-                <Route path="/placeOrder/:courseType" component={PlaceOrder}/>
+                <Route path="/placeOrder" component={PlaceOrder}/> {/* /:courseType */}
                 <Route path="/viewBooking" component={ViewOrder}/>
 
                 <Footer/>

@@ -121,13 +121,14 @@ button .pos-right{
 .my-slide{
     position: relative;
     margin-top: 10px;
+    overflow: hidden;
 }
-.owl-carousel{
+/*  .owl-theme{
     width:100%;
     height:265px;
     justify-content:space-between;
     margin-top:20px;
-}
+}  */
 .content-item{
     width: 99%;
     height: 230px;
@@ -162,8 +163,9 @@ button .pos-right{
     color: #b4690e;
 }
 .half-star{
-    font-size:90%;
+    font-size:80%;
     color:#b4690e;
+
 }
 .course-reviews{
     color: #6a6f73;
@@ -251,7 +253,7 @@ h1{
 }
 .streamCategory{
     width:100%;
-    height:300px;
+    height:250px;
     margin-top:20px;
     margin: 1.5%;
     padding: 5%;
@@ -259,7 +261,7 @@ h1{
 
 .categoryImg{
     width:100%;
-    height:100%;
+    height:97%;
 }
 .categoryImg:hover{
     transform: scale(1.05);

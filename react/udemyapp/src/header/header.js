@@ -83,7 +83,7 @@ class Header extends Component{
                         <div id="cart">
                             <a href="#">
                                 <div>
-                                    <img src="https://i.ibb.co/nsfzh24/cart.jpg" alt="cart-icon"/>
+                                    <Link to="/placeOrder"><img src="https://i.ibb.co/nsfzh24/cart.jpg" alt="cart-icon"/></Link>
                                 </div>
                             </a>
                         </div>

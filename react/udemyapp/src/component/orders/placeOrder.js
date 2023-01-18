@@ -14,8 +14,9 @@ class PlaceOrder extends Component {
  
 
         this.state={
-            id: Math.floor(Math.random()*10000),
-            course_type:this.props.match.params.courseType,
+            id: Math.floor(Math.random()*10000),/* 
+            course_type:this.props.match.params.courseType, */
+            course_type: '',
             name: sessionData?sessionData[0]:'',
             email: sessionData?sessionData[1]:'' ,
             cost:0,
@@ -140,7 +141,7 @@ class PlaceOrder extends Component {
                 totalPrice = totalPrice + parseFloat(item.course_details.cost);
                 return 'ok'
             })
-            this.setState({menuItem:data,cost:totalPrice})
+            this.setState({menuItem:data,cost:totalPrice, course_type: data[0].course_type})
         })
 
     }

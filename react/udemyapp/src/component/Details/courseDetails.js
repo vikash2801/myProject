@@ -35,8 +35,9 @@ class CourseDetail extends Component{
     }
 
     proceed=()=>{
-        sessionStorage.setItem('menu',this.state.userItem);
-        this.props.history.push(`/placeOrder/${this.state.uniqueCourse[0].course_type}`)
+        sessionStorage.setItem('menu',this.state.userItem);/* 
+        this.props.history.push(`/placeOrder/${this.state.uniqueCourse[0].course_type}`) */
+        this.props.history.push('/placeOrder');
     }
 
     render(){

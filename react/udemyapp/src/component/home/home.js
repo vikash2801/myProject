@@ -1,7 +1,7 @@
 import React from 'react';
 import CarouselCourse from './CarouselData';
-import SelectedCourse from './SelectedData';
-import StudentCourse from './StudentData';
+import SelectedCourse from './test1';
+import StudentCourse from './test2';
 import CategorizedCourse from './CategorizedData';
 import DiffCourseData from './DiffCourseData';
 import InstructorsData from './InstructorsData';
@@ -62,11 +62,12 @@ const Home =()=>{
                                                 <button className="explore">Explore Python</button>
                                             </div>
                                             <div className="my-slide">
-                                                <OwlCarousel className="owl-theme" {...options} >
+                                                {/* <OwlCarousel className="owl-theme" {...options} >
 
                                                     <SelectedCourse />
 
-                                                </OwlCarousel>
+                                                </OwlCarousel> */}
+                                                <SelectedCourse />
                                             </div>
                                         </div>
                                     </div>
@@ -75,11 +76,12 @@ const Home =()=>{
                     <div id="studentsView">
                                 <h1 className="category-heading">Students are viewing</h1>
                                 <div className="my-slide">
-                                    <OwlCarousel className="owl-carousel owl-theme" {...options} >
+                                    {/* <OwlCarousel className="owl-carousel owl-theme" {...options} >
 
                                             <StudentCourse />
 
-                                    </OwlCarousel> 
+                                    </OwlCarousel>  */}
+                                    <StudentCourse />
                                 </div>
                     </div>                          
                     
