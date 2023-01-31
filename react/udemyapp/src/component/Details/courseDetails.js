@@ -8,8 +8,11 @@ import './courseDetails.css'
 import Header from '../../header/header'
 import MenuDisplay from './MenuDisplay'
 
-const durl = "http://localhost:9000/courseDetail"
-const turl = "http://localhost:9000/courseDetail/courseType"
+//const durl = "http://localhost:9000/courseDetail"
+//const turl = "http://localhost:9000/courseDetail/courseType"
+
+const durl = "https://udemyapi.onrender.com/courseDetail"
+const turl = "https://udemyapi.onrender.com/courseDetail/courseType"
 
 class CourseDetail extends Component{
     constructor(){

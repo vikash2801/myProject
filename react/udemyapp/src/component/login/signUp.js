@@ -4,7 +4,8 @@ import './signUp.css'
 
 import Header from '../../header/header'
 
-const url = "http://localhost:5000/api/auth/register"
+//const url = "http://localhost:5000/api/auth/register"
+const url = "https://loginapi-wo9y.onrender.com/api/auth/register"
 
 class Register extends Component{
     constructor(){

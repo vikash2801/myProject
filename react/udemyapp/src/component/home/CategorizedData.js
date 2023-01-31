@@ -4,7 +4,9 @@ import Axios from 'axios'
 
 import './home.css'
 
-const catUrl = "http://localhost:9000/categoryJson"
+//const catUrl = "http://localhost:9000/categoryJson"
+const catUrl = "https://udemyapi.onrender.com/categoryJson"
+
 
 class CategoryData extends Component{
     constructor(){

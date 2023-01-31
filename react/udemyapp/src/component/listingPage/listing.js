@@ -8,7 +8,8 @@ import './listing.css'
 
 import Header from '../../header/header'
 
-const Url = "http://localhost:9000/courseDetail/courseCat"
+//const Url = "http://localhost:9000/courseDetail/courseCat"
+const Url = "https://udemyapi.onrender.com/courseDetail/courseCat"
 
 class Listing extends Component{
     constructor(props){

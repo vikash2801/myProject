@@ -3,8 +3,11 @@ import './placeOrder.css';
 
 import Header from '../../header/header'
 
-const url = "http://localhost:9000/courseItem";
-const oUrl = "http://localhost:8800/orders";
+//const url = "http://localhost:9000/courseItem";
+//const oUrl = "http://localhost:8800/orders";
+
+const url = "https://udemyapi.onrender.com/courseItem";
+const oUrl = "https://udemyapi.onrender.com/placeOrder";
 
 class PlaceOrder extends Component {
     constructor(props){
@@ -14,7 +17,7 @@ class PlaceOrder extends Component {
  
 
         this.state={
-            id: Math.floor(Math.random()*10000),/* 
+            id: Math.floor(Math.random()*1000000),/* 
             course_type:this.props.match.params.courseType, */
             course_type: '',
             name: sessionData?sessionData[0]:'',
@@ -123,7 +126,7 @@ class PlaceOrder extends Component {
             orderId.push(parseInt(item));
             return 'ok'
         })
-        console.log(">>menuItem",orderId)
+       // console.log(">>menuItem",orderId)
 
         fetch(url,{
             method: 'POST',
@@ -136,7 +139,7 @@ class PlaceOrder extends Component {
         .then((res) => res.json())
         .then((data) => {
             let totalPrice = 0;
-            console.log("totalPrice data: " + [data]);
+           // console.log("totalPrice data: " + [data]);
             data.map((item) => {
                 totalPrice = totalPrice + parseFloat(item.course_details.cost);
                 return 'ok'

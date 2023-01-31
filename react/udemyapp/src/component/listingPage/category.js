@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import axios from 'axios';
 import {Link} from 'react-router-dom'
 
-const url = "http://localhost:9000/courseDetail"
+//const url = "http://localhost:9000/courseDetail"
+const url = "https://udemyapi.onrender.com/courseDetail"
 
 class Category extends Component{
     constructor(){

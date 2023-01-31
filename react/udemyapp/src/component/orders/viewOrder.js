@@ -4,7 +4,9 @@ import Display from './DisplayOrder';
 
 import Header from '../../header/header'
 
-const orderApi = "http://localhost:8800/orders";
+//const orderApi = "http://localhost:8800/orders";
+const getOrder = "https://udemyapi.onrender.com/orders";
+const orderApi = "https://udemyapi.onrender.com/updateOrder";
 
 class ViewOrder extends Component{
 
@@ -49,7 +51,7 @@ class ViewOrder extends Component{
         let sessionData = sessionStorage.getItem('userInfo')?sessionStorage.getItem('userInfo').split(','):[]
 
 
-        axios.get(`${orderApi}?email=${sessionData[1]}`).then((res) => {this.setState({orders:res.data}); console.log(res.data)})
+        axios.get(`${getOrder}?email=${sessionData[1]}`).then((res) => {this.setState({orders:res.data}); console.log(res.data)})
     }
 }
 

@@ -4,7 +4,8 @@ import Axios from 'axios'
 
 import './home.css'
 
-const url = "http://localhost:9000/courseDetail"
+//const url = "http://localhost:9000/courseDetail"
+const url = "https://udemyapi.onrender.com/courseDetail"
 
 class SelectedData extends Component{
     constructor(){

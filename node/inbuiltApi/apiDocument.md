@@ -3,35 +3,53 @@
 https://udemyapi.onrender.com/courseDetail
 
 >list of courses wrt course type (GET)
-https://udemyapi.onrender.com/courseDetail/courseType/{{courseType}}
+https://udemyapi.onrender.com/courseDetail/courseType/:courseTopic
 e.g
-    courseType = Java, python, etc..
+    courseTopic = 1 , 3 , 4 etc.
 
->list of courses wrt rating
-https://udemyapi.onrender.com/courseDetail/rating/{{rating}}
+>list the details of specific course (GET)
+https://udemyapi.onrender.com/courseDetail/:courseId
 e.g
-    rating = 4, 3.5, etc..
+courseId = 10403
+
+>List studentCourse wrt reviewCount (GET)
+https://udemyapi.onrender.com/courseDetail/studentCourse/:count
+e.g
+count = 5000
+
+
 
 #Page2
->list course wrt courseCategory
-https://udemyapi.onrender.com/filter/{{courseCategory}}
+
+>get category details (GET)
+https://udemyapi.onrender.com/categoryJson
+
+>list course wrt courseCategory (GET)
+https://udemyapi.onrender.com/courseDetail/courseCat/:courseCategory
 e.g
     courseCategory = Development, Marketing, etc..
 
->filter course wrt courseType
-https://udemyapi.onrender.com/filter/{{courseCategory}}?courseType=Java
+>filter course wrt cost (GET)
+https://udemyapi.onrender.com/courseDetail/courseCat/:courseCategory?lcost=700&hcost=1500
 
->filter course wrt cost
-https://udemyapi.onrender.com/filter/{{courseCategory}}?lcost=700&hcost=1500
+>filter course wrt rating (GET)
+https://udemyapi.onrender.com/courseDetail/courseCat/:courseCategory?rating=3.5
 
->filter course wrt language
-https://udemyapi.onrender.com/filter/{{courseCategory}}?lang=English
+>sort the course from high cost to low cost(descending) (GET)
+https://udemyapi.onrender.com/courseDetail/courseCat/:courseCategory?lcost=700&hcost=1500&sort=-1
 
->sort the course from high cost to low cost(descending)
-https://udemyapi.onrender.com/filter/{{courseCategory}}?lcost=700&hcost=1500&sort=-1
+
 
 #Page3
->placeOrder call (POST)
+
+>get course details of given courseIDs (POST)
+https://udemyapi.onrender.com/courseItem
+//Body
+{
+    "id": [10403,10584]
+}
+
+>place the Order for added course items in cart (POST)
 https://udemyapi.onrender.com/placeOrder
 //Body
 {
@@ -39,15 +57,28 @@ https://udemyapi.onrender.com/placeOrder
     "email":"mhanda124@gmail.com",
     "address":"Bno 23,Sector 4,East Delhi",
     "phone":968760086,
-    "courseItem":[1,5],
+    "courseItem":[10403,10584],
     "status": "Pending"
 }
 
 #Page4
->List of Orders (GET)
+
+>list the orders details (GET)
 https://udemyapi.onrender.com/orders
 
 >list of orders wrt email (GET)
 https://udemyapi.onrender.com/orders?email=mhanda124@gmail.com
+
+>update the product status after payment
+https://udemyapi.onrender.com/updateOrder/:id
+e.g
+id = 10403
+
+>Delete the order from cart
+https://udemyapi.onrender.com/deleteOrder/:id
+e.g
+id = 10403
+
+
 
 

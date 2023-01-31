@@ -1,10 +1,11 @@
 import React,{Component} from 'react'
 
-const costUrl = "http://localhost:9000/courseDetail/courseCat"
+//const costUrl = "http://localhost:9000/courseDetail/courseCat" 
+const costUrl = "https://udemyapi.onrender.com/courseDetail/courseCat"
+
 class CostFilter extends Component{
 
-  //  curl = "https://udemyapi.onrender.com/filter/Development?lcost=700&hcost=1500";
-   // curl = "https://udemyapi.onrender.com//filter/Development";
+
     setURL = ''
 
     filterCost = (event) =>{

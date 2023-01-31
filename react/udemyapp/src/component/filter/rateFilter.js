@@ -1,8 +1,10 @@
 import React,{Component} from 'react'
 
-const rurl = "http://localhost:9000/courseDetail/courseCat"
+//const rurl = "http://localhost:9000/courseDetail/courseCat"
+const rurl = "https://udemyapi.onrender.com/courseDetail/courseCat"
+
 class RateFilter extends Component{
-    //curl = "https://udemyapi.onrender.com/courseDetail/rating/";
+    
     setURL = ""
     filterRate = (event) =>{
 
