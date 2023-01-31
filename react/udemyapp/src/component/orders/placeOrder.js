@@ -72,7 +72,7 @@ class PlaceOrder extends Component {
                         <h3>Order for {this.state.course_type} courses</h3>
                     </div>
                     <div className="accordion-body">
-                        <form action="http://localhost:4100/paynow" method="POST">
+                        <form action="https://paymentapi-v4t6.onrender.com/paynow" method="POST">
                             <input type="hidden" name="cost" value={this.state.cost}/>
                             <input type="hidden" name="id" value={this.state.id}/>
                             <input type="hidden" name="course_type" value={this.state.course_type}/>

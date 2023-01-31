@@ -15,7 +15,7 @@ const Display = (props) => {
                         <td>Rs. {item.cost}</td>
                         <td>{item.date}</td>
                         <td>{item.status}</td>
-                        <td>{item.bank_name}</td>
+                        <td>{item.bank}</td>
                     </tr>
                 )
             })

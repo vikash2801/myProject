@@ -3,7 +3,8 @@ import {Link,withRouter} from 'react-router-dom';
 
 import './header.css';
 
-const url = "http://localhost:5000/api/auth/userInfo"
+//const url = "http://localhost:5000/api/auth/userInfo"
+const url = "https://loginapi-wo9y.onrender.com/api/auth/userInfo"
 
 class Header extends Component{
     constructor(){
