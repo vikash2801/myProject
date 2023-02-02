@@ -1,5 +1,5 @@
 import React,{Component} from 'react'
-import {Route, BrowserRouter} from 'react-router-dom'
+import {Route, HashRouter} from 'react-router-dom'
 
 /* import Header from './header/header' */
 import Footer from './footer/footer'
@@ -24,7 +24,7 @@ class Routing extends Component{
 
     render(){
         return(
-            <BrowserRouter>
+            <HashRouter>
                 {/* <Header/> */}
                 <Route exact path="/" component={Home} />
                 <Route path="/login" component={Login} />
@@ -35,7 +35,7 @@ class Routing extends Component{
                 <Route path="/viewBooking" component={ViewOrder}/>
 
                 <Footer/>
-            </BrowserRouter>
+            </HashRouter>
                 
         
         )
