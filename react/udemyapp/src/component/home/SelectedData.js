@@ -4,27 +4,55 @@ import Axios from 'axios'
 
 import './home.css'
 
+import OwlCarousel from 'react-owl-carousel'
+import 'owl.carousel/dist/assets/owl.carousel.min.css'
+import 'owl.carousel/dist/assets/owl.theme.default.min.css'
+
+const options={
+            autoplay:true,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+}
+
 //const url = "http://localhost:9000/courseDetail"
 const url = "https://udemyapi.onrender.com/courseDetail"
 
 class SelectedData extends Component{
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
 
         this.state={
-            courseData: ''
+            courseData: this.props.inputData ? this.props.inputData : ''
         }
     }
 
     render(){
-        if(this.state.courseData){
-            return this.state.courseData.map((item,index)=> {
-                return(
-                                            <div className="item" key={index}>
-                                                <Link to={`/listing/${item.course_category}`} >
-                                                    <div className="content-item">
+        let renderDATA = (this.props.inputData ? this.props.inputData : this.state.courseData)
+        
+        if(renderDATA){
+        
+                return(             
+                    
+                            <OwlCarousel className="owl-theme" {...options} >
+                                    {renderDATA.map( (item,index) => (
+                                            <div className="item" key={index}>                                               
+
+                                                    <div className="content-item">                                                        
                                                         <div className="div-img">                                                         
+                                                            <Link to={`/listing/${item.course_category}`} >
                                                                 <img src={item.course_img} alt={item.typeId}/>
+                                                            </Link>
                                                         </div>
                                                         <div className="div-caption">
                                                             <h1>{item.course_name}</h1>
@@ -44,21 +72,27 @@ class SelectedData extends Component{
                                                             </div>
                                                             <span className="course-chrg">&#8377;{item.course_details.cost}</span>
                                                         </div>
+        
                                                     </div>
-                                            </Link>
                                         </div>
+                                    ))
+                                    }
+                                </OwlCarousel>
                                              
                     
                 )
-            })
         }
     }
 
     componentDidMount(){
-        Axios.get(`${url}`)
-        .then((res)=> this.setState({courseData: res.data}))
+        if(!this.props.inputData){
+            Axios.get(`${url}`)
+            .then((res)=> this.setState({courseData: res.data}))
+        }else{
+            this.setState({courseData: this.props.inputData ? this.props.inputData : ''})
+        }
+        
     }
-    
 }
 
 export default SelectedData;

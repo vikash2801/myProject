@@ -1,18 +1,35 @@
 import React, {Component} from 'react';
 import {Link,withRouter} from 'react-router-dom';
+import axios from 'axios'
 
 import './header.css';
 
 //const url = "http://localhost:5000/api/auth/userInfo"
 const url = "https://loginapi-wo9y.onrender.com/api/auth/userInfo"
+const BaseUrl = "https://udemyapi.onrender.com/courseDetail"
 
 class Header extends Component{
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
 
         this.state = {
-            userData: ''
+            userData: '',
+            search: ''
         }
+    }
+
+    handleSearch=(event)=>{
+        let findOut = event.target.value.toLowerCase();
+        axios.get(`${BaseUrl}`).then(response =>{
+            if(findOut){
+                let output = response.data.filter((obj)=> obj.course_name.toLowerCase().includes(findOut) || obj.course_category.toLowerCase().includes(findOut) || obj.course_subcategory.toLowerCase().includes(findOut) || obj.course_type.toLowerCase().includes(findOut))
+
+            console.log(output);
+            this.setState({search: output});
+            this.props.searchInput(this.state.search);
+            }
+        })
+
     }
 
     handleLogout = () => {
@@ -22,7 +39,7 @@ class Header extends Component{
     }
 
     conditionalHeader = () => {
-        console.log('conditional header')
+        
         if(this.state.userData.name){
             let data = this.state.userData;
             let outArray = [data.name,data.email,data.phone];
@@ -77,16 +94,16 @@ class Header extends Component{
                                     <img src="https://i.ibb.co/MV4RZy2/logo-search.jpg" alt="search-icon"/>
                                 </div>
                             </div>
-                            <div id="search"><input type="text" name="Search" placeholder="Search for anything" /></div>
+                            <div id="search"><input type="text" name="Search" onInput={this.handleSearch} placeholder="Search for anything" /></div>
                         </div>
                         <div id="UBness"><a href="#" className="font-black">Udemy Business</a></div>
                         <div id="tudemy"><a href="#" className="font-black">Teach on Udemy</a></div>
                         <div id="cart">
-                            <a href="#">
+                            {/* <a href="#"> */}
                                 <div>
                                     <Link to="/placeOrder"><img src="https://i.ibb.co/nsfzh24/cart.jpg" alt="cart-icon"/></Link>
                                 </div>
-                            </a>
+                            {/* </a> */}
                         </div>
                         <div id="day-night">
                             <button onClick={this.changeTheme}>                            
